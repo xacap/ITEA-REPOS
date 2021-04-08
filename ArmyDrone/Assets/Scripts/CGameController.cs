@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Libraries;
 using Libraries.ActionSystem;
+using Model;
 
 public enum EGameState
 {
@@ -19,7 +20,7 @@ public class CGameController : MonoBehaviour
     public CInput input;
     public EGameState currentGameState;
     private int itemsCollected = 0;
-    private CPlayerBehavior player;
+    private CPlayer player;
 
     [SerializeField] Canvas startCanvas;
     [SerializeField] Canvas inGameCanvas;

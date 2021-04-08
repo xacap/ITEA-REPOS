@@ -1,0 +1,14 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CCamera : MonoBehaviour
+{
+    [SerializeField] private float moveCameraSpeed = 2.0f;
+
+    private void FixedUpdate()
+    {
+        Vector3 forwardRun = this.transform.position + this.transform.up * moveCameraSpeed * Time.fixedDeltaTime;
+        this.transform.position = forwardRun;
+    }
+}
