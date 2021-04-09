@@ -26,16 +26,16 @@ namespace Libraries
 			observers[aPriority].Add(aObserver);
 		}
 
-		public void unregisterObserver(int aPriority, IInputObserver aObserver)
+		public void UnregisterObserver(int aPriority, IInputObserver aObserver)
 		{
 			observers[aPriority].Remove(aObserver);
 		}
 
-		public void unregisterObserver(IInputObserver aObserver)
+		public void UnregisterObserver(IInputObserver aObserver)
 		{
 			foreach (KeyValuePair<int, List<IInputObserver>> pair in observers)
 			{
-				unregisterObserver(pair.Key, aObserver);
+				UnregisterObserver(pair.Key, aObserver);
 			}
 		}
 

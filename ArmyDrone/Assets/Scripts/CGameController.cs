@@ -18,10 +18,12 @@ public enum EGameState
 public class CGameController : MonoBehaviour
 {
     public CInput input;
+    private GameObject playerAirplane;
+    public CPlayerController controller;
+
     public EGameState currentGameState;
     private int itemsCollected = 0;
-    private CPlayer player;
-
+  
     [SerializeField] Canvas startCanvas;
     [SerializeField] Canvas inGameCanvas;
     [SerializeField] Canvas onPauseCanvas;
@@ -46,10 +48,13 @@ public class CGameController : MonoBehaviour
     {
         if (Instance == null) { Instance = this; }
         currentGameState = EGameState.start;
-
-        input = new Libraries.CInput();
-
         mNotificationManager.Register(EEventType.eRestartGameEvent, IsGameFinished);
+
+        input = new CInput();
+        playerAirplane = GameObject.Find("Player");
+        controller = new CPlayerController();
+        playerAirplane.GetComponent<CAirClass>().setBehaviorController(controller);
+        input.RegisterObserver(controller, 1);
     }
 
     void Start()
@@ -59,7 +64,7 @@ public class CGameController : MonoBehaviour
 
     public void Update()
     {
-        //input.Check();
+        input.Check();
 
     }
 
