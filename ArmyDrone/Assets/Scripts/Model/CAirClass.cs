@@ -21,13 +21,17 @@ namespace Model
         {
             //if (targetPosition.x == Vector2(0f,0f))
 
-            var moveTransform = this.transform.position + this.transform.up * moveSpeed * Time.fixedDeltaTime;
+            var fixedTime = Time.fixedDeltaTime;
+            var moveTransform = this.transform.position + this.transform.up * moveSpeed * fixedTime;
+            
+
             this.transform.position = moveTransform;
 
             var startPos = this.transform.position;
                         
             lerp += Time.deltaTime / duration;
             this.transform.position = Vector2.Lerp(startPos, targetPosition, lerp);
+            //lerp = 0.0f;
         }
         public void setBehaviorController(CBaseBaheviorController airObj) 
         {
