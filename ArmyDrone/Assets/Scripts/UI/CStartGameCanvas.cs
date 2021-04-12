@@ -40,8 +40,17 @@ namespace UI
             }
                 );
 
-            var textObj = panelNode.transform.Find("Text").GetComponent<Text>();
-            textObj.text = "Старт текст";
+            var textObj0 = panelNode.transform.Find("Text1").GetComponent<Text>();
+            textObj0.text = "✪ УНИЧТОЖИТЬ 70% ВРАЖЕСКИХ СИЛ";
+
+            var textObj1 = panelNode.transform.Find("Text2").GetComponent<Text>();
+            textObj1.text = "✪ УНИЧТОЖИТЬ 100% ВРАЖЕСКИХ СИЛ";
+
+            var textObj2 = panelNode.transform.Find("Text3").GetComponent<Text>();
+            textObj2.text = "✪ СОБРАТЬ ВСЕХ ПЛЕННЫХ";
+
+            var textObj3 = panelNode.transform.Find("Text4").GetComponent<Text>();
+            textObj3.text = "✪ ОСТАТЬСЯ НЕТРОНУТЫМ";
         }
 
         public void Show()
