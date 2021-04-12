@@ -6,7 +6,7 @@ namespace Levels
 {
     public class CLeaveTrigger : MonoBehaviour
     {
-        void OnTriggerEnter(Collider other)
+        void OnTriggerEnter2D(Collider2D other)
         {
             CLevelGenerator.instance.AddPiece();
             CLevelGenerator.instance.RemoveOldestPiece();

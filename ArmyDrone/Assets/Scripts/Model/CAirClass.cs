@@ -16,7 +16,8 @@ namespace Model
 
         void Update()
         {
-            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
+            this.transform.position = Vector3.SmoothDamp(this.transform.position, 
+                targetPosition, ref velocity, smoothTime);
         }
 
         public void setBehaviorController(CBaseBaheviorController airObj) 
