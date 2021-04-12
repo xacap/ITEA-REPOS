@@ -9,30 +9,16 @@ namespace Model
     public class CAirClass : MonoBehaviour
     {
         CBaseBaheviorController moveController;
+        
+        public Vector3 targetPosition = Vector2.zero;
+        public float smoothTime = 0.3f;
+        private Vector3 velocity = Vector3.zero;
 
-        public Vector2 targetPosition = Vector2.zero;
-
-        [SerializeField] private float moveSpeed = 2.0f;
-        float lerp = 0, duration = 20f;
-
-
-
-        private void FixedUpdate()
+        void Update()
         {
-            //if (targetPosition.x == Vector2(0f,0f))
-
-            var fixedTime = Time.fixedDeltaTime;
-            var moveTransform = this.transform.position + this.transform.up * moveSpeed * fixedTime;
-            
-
-            this.transform.position = moveTransform;
-
-            var startPos = this.transform.position;
-                        
-            lerp += Time.deltaTime / duration;
-            this.transform.position = Vector2.Lerp(startPos, targetPosition, lerp);
-            //lerp = 0.0f;
+            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
         }
+
         public void setBehaviorController(CBaseBaheviorController airObj) 
         {
             moveController = airObj;
