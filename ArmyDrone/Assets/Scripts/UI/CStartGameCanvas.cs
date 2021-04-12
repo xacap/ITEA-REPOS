@@ -60,7 +60,7 @@ namespace UI
         private void StartButton()
         {
             Debug.Log("Нажата кнопка START");
-           // Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
 
         private void ToggleValueChangedOccured(Toggle tglValue)
