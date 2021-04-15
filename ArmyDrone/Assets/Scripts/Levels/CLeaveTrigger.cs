@@ -6,11 +6,15 @@ namespace Levels
 {
     public class CLeaveTrigger : MonoBehaviour
     {
-        void OnTriggerEnter2D(Collider2D other)
+        void OnTriggerEnter2D(Collider2D collision)
         {
-            CLevelGenerator.instance.AddPiece();
-            CLevelGenerator.instance.RemoveOldestPiece();
+            if (collision != null && collision.gameObject.tag == "player")
+            {
+                CLevelGenerator.instance.AddPiece();
+                CLevelGenerator.instance.RemoveOldestPiece();
+            }
         }
+        
     }
 }
 

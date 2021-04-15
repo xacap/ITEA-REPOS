@@ -8,9 +8,9 @@ namespace Levels
     {
         public static CLevelGenerator instance;
 
-        [SerializeField] List<CLevelPiece> levelPrefabs = new List<CLevelPiece>();
+        public List<CLevelPiece> levelPrefabs = new List<CLevelPiece>();
         [SerializeField] Transform levelStartPoint;
-        [SerializeField] List<CLevelPiece> pieces = new List<CLevelPiece>();
+        public List<CLevelPiece> pieces = new List<CLevelPiece>();
 
         [SerializeField] CLevelPiece pieceFinish;
         private int pieceCount = 0;
