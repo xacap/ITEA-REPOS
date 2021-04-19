@@ -17,21 +17,31 @@ namespace Model
         List<IWeapon> weapons = new List<IWeapon>();
 
         [SerializeField] private CMainWeapon mMainWeapon;
-        [SerializeField] private CMainWeapon mWeapon;
 
         public Transform slotTransform;
-
+        Transform drone;
+        private Animator animator;
 
         private void Awake()
         {
             mMainWeapon = Instantiate(mMainWeapon);
+            mMainWeapon.transform.SetParent(this.transform, false);
             AddWeapons();
+            drone = this.gameObject.transform.GetChild(1);
+            animator = drone.GetComponent<Animator>();
         }
         void Update()
         {
             this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
             mMainWeapon.transform.position = slotTransform.position;
             mMainWeapon.Shoot();
+
+            if (targetPosition != Vector3.zero)
+            {
+               
+                animator.SetInteger("AnimationPar", 1);
+            }
+            
         }
 
         public void setBehaviorController(CBaseBaheviorController airObj)

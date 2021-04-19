@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum SoundsFx
+public enum ESoundsFx
 {
     //Game
     Booster,
@@ -16,7 +16,7 @@ public enum SoundsFx
     Win
 }
 
-public enum MusicType
+public enum EMusicType
 {
     MainMenu,
     Game
@@ -28,7 +28,6 @@ public class CAudioManager : MonoBehaviour
 
     [SerializeField] private List<SoundFxData> _soundsFXList = new List<SoundFxData>();
     [SerializeField] private List<MusicData> _musicList = new List<MusicData>();
-    // Start is called before the first frame update
 
     public static CAudioManager Instance;
 
@@ -40,15 +39,15 @@ public class CAudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySFX(SoundsFx soundsFx)
+    public void PlaySFX(ESoundsFx soundsFx)
     {
         //get neccessary sounds clip
         // set clip and play
-        var clip = GetSoundFXClip(soundsFx);
+        AudioClip clip = GetSoundFXClip(soundsFx);
         _soundFxSource.PlayOneShot(clip);
     }
 
-    public void PlayMusic(MusicType music)
+    public void PlayMusic(EMusicType music)
     {
         _musicSource.clip = GetMusicClip(music);
         _musicSource.Play();
@@ -65,15 +64,15 @@ public class CAudioManager : MonoBehaviour
         //_musicSource.mute = isOn;
     }
 
-    private AudioClip GetSoundFXClip(SoundsFx soundsFx)
+    private AudioClip GetSoundFXClip(ESoundsFx eSoundsFx)
     {
-        var soundData = _soundsFXList.Find(sfxData => sfxData.SoundFx == soundsFx);
+        SoundFxData soundData = _soundsFXList.Find(sfxData => sfxData.eSoundFx == eSoundsFx);
         return soundData?.Clip;
     }
 
-    private AudioClip GetMusicClip(MusicType music)
+    private AudioClip GetMusicClip(EMusicType eMusic)
     {
-        var musicData = _musicList.Find(musicfx => musicfx.Music == music);
+        MusicData musicData = _musicList.Find(musicfx => musicfx.eMusic == eMusic);
         return musicData?.Clip;
     }
 
@@ -98,7 +97,7 @@ public class CAudioManager : MonoBehaviour
 [Serializable]
 public class SoundFxData
 {
-    public SoundsFx SoundFx;
+    public ESoundsFx eSoundFx;
     public AudioClip Clip;
 }
 
@@ -106,6 +105,6 @@ public class SoundFxData
 [Serializable]
 public class MusicData
 {
-    public MusicType Music;
+    public EMusicType eMusic;
     public AudioClip Clip;
 }
