@@ -9,11 +9,11 @@ namespace Model
 	{
 		public int health = 100;
 
-		private Animator animator;
+		//private Animator animator;
 
 		private void Awake()
 		{
-			animator = this.GetComponent<Animator>();
+			//animator = this.GetComponent<Animator>();
 		}
 		public void TakeDamage(int damage)
 		{
@@ -27,8 +27,8 @@ namespace Model
 
 		void Die()
 		{
-			animator.SetInteger("AnimationPar", 2);
-			//Destroy(gameObject);
+			//animator.SetInteger("AnimationPar", 2);
+			Destroy(gameObject);
 		}
 	}
 }

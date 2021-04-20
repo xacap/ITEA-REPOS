@@ -20,7 +20,7 @@ namespace Model
 
         public Transform slotTransform;
         Transform drone;
-        private Animator animator;
+        //private Animator animator;
 
         private void Awake()
         {
@@ -28,20 +28,29 @@ namespace Model
             mMainWeapon.transform.SetParent(this.transform, false);
             AddWeapons();
             drone = this.gameObject.transform.GetChild(1);
-            animator = drone.GetComponent<Animator>();
+            //animator = drone.GetComponent<Animator>();
         }
         void Update()
         {
+            var stay = this.transform.position;
+
             this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
             mMainWeapon.transform.position = slotTransform.position;
             mMainWeapon.Shoot();
 
-            if (targetPosition != Vector3.zero)
+           /*
+            if (Input.GetKey("w"))
             {
-               
-                animator.SetInteger("AnimationPar", 1);
+                animator.SetInteger("AnimationPar", 2);
             }
-            
+            else
+            {
+                animator.SetInteger("AnimationPar", 0);
+            }
+           */
+                      
+           
+            Debug.Log(stay);
         }
 
         public void setBehaviorController(CBaseBaheviorController airObj)
