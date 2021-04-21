@@ -10,15 +10,19 @@ namespace Model
         
         private float mTime;
 
+        private GameObject bulletPrefab;
+
         public void Shoot()
         {
-            if (mTime + 0.5 <= Time.time)
+            if (mTime + 0.36 <= Time.time)
             {
-                var bulletPrefab = Resources.Load<GameObject>("Bullets/Bullet");
+                bulletPrefab = Resources.Load<GameObject>("Bullets/Bullet");
                 Instantiate(bulletPrefab);
-                bulletPrefab.transform.position = this.transform.position;
+                CAudioManager.Instance.PlaySFX(ESoundsFx.ShootShort);
+
                 mTime = Time.time;
             }
+            bulletPrefab.transform.position = this.transform.position;
         }
 
         public EWeponType GetWeaponType(EWeponType eWeponTipe)

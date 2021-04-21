@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 3093075379143480312}
   - component: {fileID: 6349222359799322228}
   - component: {fileID: 5671785846442034917}
+  - component: {fileID: -2846436650565717951}
   m_Layer: 0
   m_Name: DroneBlack
   m_TagString: Untagged
@@ -170,6 +171,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 217185623bf4f5448ab89ee1a6f35bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &-2846436650565717951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3982466567045197945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82609e7804bd5540b32633b5863ad82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3982466567243201572

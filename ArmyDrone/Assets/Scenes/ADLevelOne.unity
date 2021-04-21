@@ -1827,7 +1827,7 @@ Transform:
   m_GameObject: {fileID: 1059719761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 1901675775}
   - {fileID: 1820696060}
@@ -3586,12 +3586,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817417581}
   m_CullTransparentMesh: 0
+--- !u!1 &1820696059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5155974485082285080, guid: 00e7345575659b14b96a5e10ee4f7934,
+    type: 3}
+  m_PrefabInstance: {fileID: 1868748180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1820696060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
     type: 3}
   m_PrefabInstance: {fileID: 1868748180}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1820696061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820696059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82609e7804bd5540b32633b5863ad82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1858322826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,6 +3708,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3764,7 +3797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901675774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.92, z: 0}
+  m_LocalPosition: {x: 0, y: 3.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059719763}
@@ -3809,13 +3842,13 @@ MonoBehaviour:
   - eSoundFx: 2
     Clip: {fileID: 8300000, guid: b9702e8ab62074ebdb55fad1b8cf8147, type: 3}
   - eSoundFx: 4
-    Clip: {fileID: 8300000, guid: 23f687d3a21014058960b3136f6c3514, type: 3}
+    Clip: {fileID: 8300000, guid: bf4ae970328ef8a41a9b61af5c184560, type: 3}
   - eSoundFx: 5
     Clip: {fileID: 8300000, guid: ec62fcf6d792f40d398e7e318100e0fe, type: 3}
   - eSoundFx: 6
     Clip: {fileID: 8300000, guid: dcf229a9a653544e39a60b39036dc4a7, type: 3}
   - eSoundFx: 3
-    Clip: {fileID: 8300000, guid: 8a4b69dd792fec842964daf55f180657, type: 3}
+    Clip: {fileID: 8300000, guid: a7d4466d6c781d54f9426d6805051afd, type: 3}
   _musicList:
   - eMusic: 0
     Clip: {fileID: 8300000, guid: 6e00c67407601ca46b4f1d784e6c2b08, type: 3}

@@ -29,12 +29,13 @@ namespace Model
             AddWeapons();
             drone = this.gameObject.transform.GetChild(1);
             animator = drone.GetComponent<Animator>();
+
         }
         void Update()
         {
             var stay = this.transform.position;
-
-            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime);
+            var inputUp = new Vector3(0, 0.5f, 0);
+            this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition + inputUp, ref velocity, smoothTime);
            
             if (stay != targetPosition)
             {

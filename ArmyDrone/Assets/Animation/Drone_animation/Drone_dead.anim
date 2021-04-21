@@ -473,4 +473,20 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: AddExplosionElectro
+    data: 
+    objectReferenceParameter: {fileID: 7837571022265081810, guid: 45e4b9cf9be13144a87081c1bf33d620,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2
+    functionName: AddExplosionEffect
+    data: 
+    objectReferenceParameter: {fileID: 1770649511444133024, guid: 22b6a694d228c8c488dd78299a621693,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
