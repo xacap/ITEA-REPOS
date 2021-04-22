@@ -7,7 +7,7 @@ namespace Model
 	public class CBulletBehavior : MonoBehaviour
 	{
 		[SerializeField] private float speedUp = 3f;
-		public int damage = 40;
+		public int damage = 30;
 		Rigidbody2D _rb;
 		[SerializeField] private GameObject explosionEffect;
 		public float onescreenDelay = 3f;

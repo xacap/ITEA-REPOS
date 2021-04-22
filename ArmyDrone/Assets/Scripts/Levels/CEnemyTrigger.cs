@@ -18,15 +18,11 @@ namespace Levels
 
         void EnemyGen()
         {
-            if (mTime + 0.3 <= Time.time)
-            {
-                enemyPrefab = Resources.Load<GameObject>("Enemys/EnemyDrone");
-                Instantiate(enemyPrefab);
+            enemyPrefab = Resources.Load<GameObject>("Enemys/EnemyDrone");
+            Instantiate(enemyPrefab);
 
-                mTime = Time.time;
-            }
-
-            var offsetPos = new Vector3(5,0,0);
+            var offsetPos = new Vector3(0,0,0);
+            enemyPrefab.transform.position = transform.parent.position;
             enemyPrefab.transform.position = this.transform.position + offsetPos;
         }
     }
