@@ -32,7 +32,7 @@ namespace Model
 			if (enemy != null && collision.gameObject.tag == "enemy")
 			{
 				var explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
-				CAudioManager.Instance.PlaySFX(ESoundsFx.ColorBomb);
+				CAudioManager.Instance.PlaySFX(ESoundsFx.BulletBoom);
 
 				Destroy(gameObject);
 				Destroy(explosion, 1f);

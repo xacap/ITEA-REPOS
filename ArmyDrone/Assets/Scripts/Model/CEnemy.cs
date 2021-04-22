@@ -27,8 +27,10 @@ namespace Model
 
 		void Die()
 		{
+			CAudioManager.Instance.PlaySFX(ESoundsFx.EnemyDie);
+			var mCollider = this.GetComponent<BoxCollider2D>();
+			mCollider.enabled = false;
 			animator.SetInteger("MovingParam", 2);
-			//Destroy(gameObject);
 		}
 	}
 }

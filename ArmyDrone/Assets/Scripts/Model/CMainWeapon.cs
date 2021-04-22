@@ -14,7 +14,7 @@ namespace Model
 
         public void Shoot()
         {
-            if (mTime + 0.36 <= Time.time)
+            if (mTime + 0.26 <= Time.time)
             {
                 bulletPrefab = Resources.Load<GameObject>("Bullets/Bullet");
                 Instantiate(bulletPrefab);

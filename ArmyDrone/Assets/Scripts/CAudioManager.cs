@@ -8,9 +8,10 @@ public enum ESoundsFx
     //Game
     Booster,
     Collect,
-    ColorBomb,
+    BulletBoom,
     ShootShort,
     ShootLong,
+    EnemyDie,
     //UI
     Button,
     Lose,

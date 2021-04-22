@@ -3586,30 +3586,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817417581}
   m_CullTransparentMesh: 0
---- !u!1 &1820696059 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5155974485082285080, guid: 00e7345575659b14b96a5e10ee4f7934,
-    type: 3}
-  m_PrefabInstance: {fileID: 1868748180}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1820696060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5155974485082285081, guid: 00e7345575659b14b96a5e10ee4f7934,
     type: 3}
   m_PrefabInstance: {fileID: 1868748180}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1820696061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820696059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e82609e7804bd5540b32633b5863ad82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1858322826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,11 +3826,11 @@ MonoBehaviour:
   - eSoundFx: 4
     Clip: {fileID: 8300000, guid: bf4ae970328ef8a41a9b61af5c184560, type: 3}
   - eSoundFx: 5
-    Clip: {fileID: 8300000, guid: ec62fcf6d792f40d398e7e318100e0fe, type: 3}
+    Clip: {fileID: 8300000, guid: e7a8b9c1d6ba57d40b9c07bf5aa11bdb, type: 3}
   - eSoundFx: 6
     Clip: {fileID: 8300000, guid: dcf229a9a653544e39a60b39036dc4a7, type: 3}
   - eSoundFx: 3
-    Clip: {fileID: 8300000, guid: a7d4466d6c781d54f9426d6805051afd, type: 3}
+    Clip: {fileID: 8300000, guid: 18505417e1c35c943aee542c0441114b, type: 3}
   _musicList:
   - eMusic: 0
     Clip: {fileID: 8300000, guid: 6e00c67407601ca46b4f1d784e6c2b08, type: 3}
