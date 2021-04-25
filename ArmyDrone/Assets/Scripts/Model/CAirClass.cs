@@ -8,6 +8,13 @@ namespace Model
 {
     public class CAirClass : MonoBehaviour
     {
+        public enum EWeaponType
+        {
+            mainWeapon,
+            plasmWeapon
+        }
+
+        [SerializeField] EWeaponType eWeaponType = EWeaponType.mainWeapon;
         CBaseBaheviorController moveController;
         
         public Vector3 targetPosition = Vector2.zero;
@@ -17,17 +24,23 @@ namespace Model
         List<IWeapon> weapons = new List<IWeapon>();
 
         [SerializeField] private CMainWeapon mMainWeapon;
+        [SerializeField] private CPlasmWeapon mPlasmWeapon;
 
         public Transform slotTransform;
+        public Transform slotPlasmTransform;
+
         Transform drone;
-       private Animator animator;
+        private Animator animator;
 
         private void Awake()
         {
             mMainWeapon = Instantiate(mMainWeapon);
             mMainWeapon.transform.SetParent(this.transform, false);
+            mPlasmWeapon = Instantiate(mPlasmWeapon);
+            mPlasmWeapon.transform.SetParent(this.transform, false);
             AddWeapons();
-            drone = this.gameObject.transform.GetChild(1);
+
+            drone = this.gameObject.transform.GetChild(0);
             animator = drone.GetComponent<Animator>();
 
         }
@@ -46,25 +59,46 @@ namespace Model
                 animator.SetInteger("MovingParam", 0);
             }
 
-
-            Debug.Log("stay " + stay);
-            Debug.Log("targetPosition " + targetPosition);
-
             mMainWeapon.transform.position = slotTransform.position;
-            mMainWeapon.Shoot();
+            mPlasmWeapon.transform.position = slotPlasmTransform.position;
+
+            if (eWeaponType == EWeaponType.mainWeapon)
+            {
+                mMainWeapon.Shoot();
+            }
+            else if (eWeaponType == EWeaponType.plasmWeapon)
+            {
+                mPlasmWeapon.Shoot();
+            }
+
+            GetWeapon();
+        }
+
+        public void AddWeapons()
+        {
+            slotTransform = this.gameObject.transform.GetChild(1);
+            slotPlasmTransform = this.gameObject.transform.GetChild(2);
+
+            weapons.Add(mMainWeapon);
+            weapons.Add(mPlasmWeapon);
+        }
+
+        public void GetWeapon()
+        {
+            if (Input.GetKey("1"))
+            {
+                eWeaponType = EWeaponType.mainWeapon;
+            }
+            else if (Input.GetKey("2"))
+            {
+                eWeaponType = EWeaponType.plasmWeapon;
+            }
         }
 
         public void setBehaviorController(CBaseBaheviorController airObj)
         {
             moveController = airObj;
             moveController.setAirTarget(this);
-        }
-
-
-        public void AddWeapons()
-        {
-            slotTransform = this.gameObject.transform.GetChild(0);
-            weapons.Add(mMainWeapon);
         }
     }
 }

@@ -22,7 +22,11 @@ namespace Model
 
                 mTime = Time.time;
             }
-            bulletPrefab.transform.position = this.transform.position;
+
+            if (bulletPrefab != null)
+            {
+                bulletPrefab.transform.position = this.transform.position;
+            }
         }
 
         public EWeponType GetWeaponType(EWeponType eWeponTipe)
@@ -30,6 +34,8 @@ namespace Model
             return main;
         }
     }
+
+
 }
 
 

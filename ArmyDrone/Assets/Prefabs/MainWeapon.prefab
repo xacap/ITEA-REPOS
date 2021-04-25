@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: 0
-  targetPos: {x: 0, y: 0}
 --- !u!50 &648428202401184084
 Rigidbody2D:
   serializedVersion: 4

@@ -6,24 +6,18 @@ namespace Levels
 {
     public class CEnemyTrigger : MonoBehaviour
     {
-        private float mTime;
-
         private GameObject enemyPrefab;
         
-
         void OnBecameVisible()
         {
-            EnemyGen();
+            InvokeRepeating("GetEnemy", 0.3f, 0.3f);
+            Destroy(this.gameObject, 1.1f);
         }
 
-        void EnemyGen()
+        void GetEnemy()
         {
             enemyPrefab = Resources.Load<GameObject>("Enemys/EnemyDrone");
             Instantiate(enemyPrefab);
-
-            var offsetPos = new Vector3(0,0,0);
-            enemyPrefab.transform.position = transform.parent.position;
-            enemyPrefab.transform.position = this.transform.position + offsetPos;
         }
     }
 }

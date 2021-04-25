@@ -17,18 +17,23 @@ public enum EGameState
 
 public class CGameController : MonoBehaviour
 {
+    public static CGameController Instance;
+    //public static CGameController Instance { get; private set; }
+
+
     public CInput input;
     private GameObject playerAirplane;
     public CPlayerController controller;
 
     public EGameState currentGameState;
-    private int itemsCollected = 0;
   
     [SerializeField] Canvas startCanvas;
     [SerializeField] Canvas inGameCanvas;
     [SerializeField] Canvas onPauseCanvas;
     [SerializeField] Canvas levelPassCanvas;
     [SerializeField] Canvas gameOverCanvas;
+
+    public int herat = 100;
 
     private CEvents mNotificationManager = new CEvents();
 
@@ -42,11 +47,11 @@ public class CGameController : MonoBehaviour
         get { return Instance.input; }
     }
 
-    public static CGameController Instance { get; private set; }
 
     public void Awake()
     {
         if (Instance == null) { Instance = this; }
+
         currentGameState = EGameState.start;
         mNotificationManager.Register(EEventType.eRestartGameEvent, IsGameFinished);
 
@@ -59,12 +64,18 @@ public class CGameController : MonoBehaviour
 
     void Start()
     {
+        currentGameState = EGameState.start;
         CInventoryList<string> inventoryList = new CInventoryList<string>();
     }
 
     public void Update()
     {
         input.Check();
+
+        if (herat >= 100)
+        {
+            herat = 100;
+        }
 
     }
 
@@ -131,14 +142,9 @@ public class CGameController : MonoBehaviour
         currentGameState = newGameState;
     }
 
-    public int Items
+    public int Hearts
     {
-        get { return itemsCollected; }
-        set
-        {
-            itemsCollected = value;
-        }
+        get { return herat; }
+        set { herat = value; }
     }
-
-   
 }

@@ -7,8 +7,9 @@ namespace Model
 public enum EWeponType
 {
     main,
-    rocket,
-    lazer
+    plasm,
+    rocket
+    
 }
     public interface IWeapon 
     {

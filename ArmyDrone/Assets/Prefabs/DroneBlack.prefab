@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466566740908423}
   - component: {fileID: 3982466566740908422}
-  m_Layer: 0
-  m_Name: DrponeGun
+  m_Layer: 8
+  m_Name: DrponeGunBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6349222359799322228}
   - component: {fileID: 5671785846442034917}
   - component: {fileID: -2846436650565717951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DroneBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,8 +196,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466567243201571}
   - component: {fileID: 3982466567243201570}
-  m_Layer: 0
-  m_Name: DroneBody
+  m_Layer: 8
+  m_Name: DroneBlackBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466567613956627}
   - component: {fileID: 3982466567613956626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrponePropeller2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466567684897228}
   - component: {fileID: 3982466567684897227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrponePropeller1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466567978597357}
   - component: {fileID: 3982466567978597356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrponePropeller3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3982466568459755394}
   - component: {fileID: 3982466568459755393}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrponePropeller4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
