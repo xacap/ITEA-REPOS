@@ -23,7 +23,6 @@ namespace Items
 
 			if (player != null && collision.gameObject.tag == "player")
 			{
-				
 				player.SetDamage(health);
 				Destroy(this.gameObject);
 			}

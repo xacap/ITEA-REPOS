@@ -5,13 +5,7 @@ using Libraries;
 
 namespace Model
 {
-    public enum EPlayerState
-    {
-        stay,
-        run,
-        winner,
-        dead
-    }
+    
     public class CPlayerController : CBaseBaheviorController, IInputObserver
     {
         [SerializeField] private int score = 0;

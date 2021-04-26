@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using Libraries;
 using Libraries.ActionSystem;
 using Model;
+using UI;
 
 public enum EGameState
 {
@@ -26,16 +27,18 @@ public class CGameController : MonoBehaviour
     public CPlayerController controller;
 
     public EGameState currentGameState;
-  
-    [SerializeField] Canvas startCanvas;
-    [SerializeField] Canvas inGameCanvas;
-    [SerializeField] Canvas onPauseCanvas;
-    [SerializeField] Canvas levelPassCanvas;
-    [SerializeField] Canvas gameOverCanvas;
+
+    public Canvas startCanvas;
+    public Canvas inGameCanvas;
+    public Canvas onPauseCanvas;
+    public Canvas levelPassCanvas;
+    public Canvas gameOverCanvas;
 
     public int herat = 100;
 
     private CEvents mNotificationManager = new CEvents();
+    private CUIController _UIController = new CUIController();
+
 
     public CEvents GetNotificationManager()
     {
@@ -88,12 +91,16 @@ public class CGameController : MonoBehaviour
     {
         Time.timeScale = 0f;
         SetGameState(EGameState.levelPass);
+        _UIController.ShowLevelPassWindow(EPlayerState.ePlayerWinner);
+
     }
-   
+
     public void IsGameFinished()
     {
         Time.timeScale = 0f;
         SetGameState(EGameState.gameOver);
+        _UIController.ShowGameFinishWindow(EPlayerState.ePlayerLost);
+
     }
 
     void SetGameState(EGameState newGameState)

@@ -27,7 +27,7 @@ namespace Levels
 
         public void GenerateInitialPieces()
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 3; i++)
             {
                 AddPiece();
             }
@@ -57,7 +57,7 @@ namespace Levels
             pieces.Add(piece);
             pieceCount++;
 
-            if (pieceCount >= 4)
+            if (pieceCount >= 3)
             {
                 pieceCount = 0;
             }
