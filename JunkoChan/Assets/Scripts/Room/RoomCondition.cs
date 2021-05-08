@@ -29,7 +29,7 @@ namespace Room
             {
                 playerInThisRoom = true;
                 PlayerTargeting.Instance.MonsterList = new List<GameObject>(MonsterListInRoom);
-               // Debug.Log("Enter New Room! Mob Count : " + PlayerTargeting.Instance.MonsterList.Count);
+                //Debug.Log("Enter New Room! Mob Count : " + PlayerTargeting.Instance.MonsterList.Count);
                 //Debug.Log ( "Player Enter New Room!" );
             }
             if (other.CompareTag("Monster"))
@@ -45,7 +45,7 @@ namespace Room
             {
                 playerInThisRoom = false;
                 PlayerTargeting.Instance.MonsterList.Clear();
-                Debug.Log("Player Exit!");
+                //Debug.Log("Player Exit!");
             }
             if (other.CompareTag("Monster"))
             {

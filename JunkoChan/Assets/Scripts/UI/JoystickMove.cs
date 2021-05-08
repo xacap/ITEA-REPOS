@@ -51,7 +51,6 @@ namespace UI
 
             if (!PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
             {
-                Debug.Log ( "WALK!" );
                 PlayerMovement.Instance.Anim.SetBool("Attack", false);
                 PlayerMovement.Instance.Anim.SetBool("Idle", false);
                 PlayerMovement.Instance.Anim.SetBool("Run", true);
@@ -85,7 +84,6 @@ namespace UI
 
             if (!PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
             {
-                Debug.Log ( "IDLE!" );
                 PlayerMovement.Instance.Anim.SetBool("Attack", false);
                 PlayerMovement.Instance.Anim.SetBool("Run", false);
                 PlayerMovement.Instance.Anim.SetBool("Idle", true);

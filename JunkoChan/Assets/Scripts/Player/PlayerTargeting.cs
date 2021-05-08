@@ -38,14 +38,10 @@ namespace Player
 
         public List<GameObject> MonsterList = new List<GameObject>(); //Monster List 
 
-        public GameObject PlayerBolt;  //Снаряд
+        public GameObject PlayerBullet;  //Снаряд
         public Transform AttackPoint;
 
-        void Update()
-        {
-            SetTarget();
-            AtkTarget();
-        }
+        
 
         void OnDrawGizmos()
         {
@@ -71,10 +67,16 @@ namespace Player
             }
         }
 
+        void Update()
+        {
+            SetTarget();
+            AtkTarget();
+        }
+
         void Attack()
         {
-            PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
-            Instantiate(PlayerBolt, AttackPoint.position, transform.rotation);
+            //PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
+            Instantiate(PlayerBullet, AttackPoint.position, transform.rotation);
         }
 
         void SetTarget()
@@ -88,7 +90,7 @@ namespace Player
 
                 for (int i = 0; i < MonsterList.Count; i++)
                 {
-                    if (MonsterList[i] == null) { return; }   // Добавлять
+                    if (MonsterList[i] == null) { return; }   
                     currentDist = Vector3.Distance(transform.position, MonsterList[i].transform.GetChild(0).position);//менять 
 
                     RaycastHit hit;
@@ -130,38 +132,39 @@ namespace Player
 
         void AtkTarget()
         {
-            if (TargetIndex == -1 || MonsterList.Count == 0)  // Добавлять 
+            if (TargetIndex == -1 || MonsterList.Count == 0) 
             {
                 PlayerMovement.Instance.Anim.SetBool("Attack", false);
                 return;
             }
             if (getATarget && !JoystickMove.Instance.isPlayerMoving && MonsterList.Count != 0)
             {
-                Debug.Log ( "lookat : " + MonsterList[TargetIndex].transform.GetChild ( 0 ) );  // менять
-                transform.LookAt(MonsterList[TargetIndex].transform.GetChild(0));     // менять
+                //Debug.Log ( "lookat : " + MonsterList[TargetIndex].transform.GetChild ( 0 ) ); 
+                //transform.LookAt(MonsterList[TargetIndex].transform.GetChild(0)); 
 
                 if (PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
                 {
                     PlayerMovement.Instance.Anim.SetBool("Idle", false);
-                    PlayerMovement.Instance.Anim.SetBool("Walk", false);
-                    //PlayerMovement.Instance.Anim.SetBool ( "Attack", true );
+                    PlayerMovement.Instance.Anim.SetBool("Run", false);
+                    PlayerMovement.Instance.Anim.SetBool ( "Attack", true );
                 }
+                Attack();
 
             }
             else if (JoystickMove.Instance.isPlayerMoving)
             {
-                if (!PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+                if (!PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Run"))
                 {
                     PlayerMovement.Instance.Anim.SetBool("Attack", false);
                     PlayerMovement.Instance.Anim.SetBool("Idle", false);
-                    PlayerMovement.Instance.Anim.SetBool("Walk", true);
+                    PlayerMovement.Instance.Anim.SetBool("Run", true);
                 }
             }
             else
             {
                 PlayerMovement.Instance.Anim.SetBool("Attack", false);
                 PlayerMovement.Instance.Anim.SetBool("Idle", true);
-                PlayerMovement.Instance.Anim.SetBool("Walk", false);
+                PlayerMovement.Instance.Anim.SetBool("Run", false);
             }
         }
     }
