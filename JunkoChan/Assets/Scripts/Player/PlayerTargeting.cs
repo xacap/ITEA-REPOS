@@ -94,8 +94,8 @@ namespace Player
                     currentDist = Vector3.Distance(transform.position, MonsterList[i].transform.GetChild(0).position);//менять 
 
                     RaycastHit hit;
-                    bool isHit = Physics.Raycast(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position,//менять 
-                                                out hit, 20f, layerMask);
+                    bool isHit = Physics.Raycast(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position, out hit, 20f, layerMask);
+
 
                     if (isHit && hit.transform.CompareTag("Monster"))
                     {

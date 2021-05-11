@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c15df780c0025fb4596b794b1ad20d09,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -321,7 +322,7 @@ GameObject:
   - component: {fileID: 5897227}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -664,7 +665,7 @@ GameObject:
   - component: {fileID: 15404504}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -891,7 +892,7 @@ GameObject:
   - component: {fileID: 33591134}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1613,7 +1614,7 @@ GameObject:
   - component: {fileID: 54078721}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1828,7 +1829,7 @@ GameObject:
   - component: {fileID: 63313375}
   m_Layer: 9
   m_Name: fbFloor3X3_Torch (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1869,7 +1870,7 @@ GameObject:
   - component: {fileID: 71390260}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2282,7 +2283,7 @@ GameObject:
   - component: {fileID: 101038516}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2561,7 +2562,7 @@ GameObject:
   - component: {fileID: 104436269}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2963,7 +2964,7 @@ GameObject:
   - component: {fileID: 121384656}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3056,7 +3057,7 @@ GameObject:
   - component: {fileID: 125246735}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3335,7 +3336,7 @@ GameObject:
   - component: {fileID: 136098008}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3614,7 +3615,7 @@ GameObject:
   - component: {fileID: 146943660}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4358,7 +4359,7 @@ GameObject:
   - component: {fileID: 186158581}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4544,7 +4545,7 @@ GameObject:
   - component: {fileID: 193167045}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4637,7 +4638,7 @@ GameObject:
   - component: {fileID: 193443966}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4837,7 +4838,7 @@ GameObject:
   - component: {fileID: 196584650}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5465,7 +5466,7 @@ GameObject:
   - component: {fileID: 263616895}
   m_Layer: 9
   m_Name: fbBrickWallTorch
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5639,7 +5640,7 @@ GameObject:
   - component: {fileID: 273610566}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6586,7 +6587,7 @@ GameObject:
   - component: {fileID: 323945688}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7257,7 +7258,7 @@ GameObject:
   - component: {fileID: 364681467}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12272,7 +12273,7 @@ GameObject:
   - component: {fileID: 380371451}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12365,7 +12366,7 @@ GameObject:
   - component: {fileID: 385774192}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12458,7 +12459,7 @@ GameObject:
   - component: {fileID: 386490590}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12737,7 +12738,7 @@ GameObject:
   - component: {fileID: 392026005}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13388,7 +13389,7 @@ GameObject:
   - component: {fileID: 409831102}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14132,7 +14133,7 @@ GameObject:
   - component: {fileID: 431019991}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14318,7 +14319,7 @@ GameObject:
   - component: {fileID: 434867948}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15240,7 +15241,7 @@ GameObject:
   - component: {fileID: 467840567}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15333,7 +15334,7 @@ GameObject:
   - component: {fileID: 472742295}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15563,7 +15564,7 @@ GameObject:
   - component: {fileID: 480672320}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15656,7 +15657,7 @@ GameObject:
   - component: {fileID: 482410684}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15842,7 +15843,7 @@ GameObject:
   - component: {fileID: 492233325}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16121,7 +16122,7 @@ GameObject:
   - component: {fileID: 503800922}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16214,7 +16215,7 @@ GameObject:
   - component: {fileID: 506331213}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16493,7 +16494,7 @@ GameObject:
   - component: {fileID: 524056306}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17203,7 +17204,7 @@ GameObject:
   - component: {fileID: 553825823}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17341,7 +17342,7 @@ GameObject:
   - component: {fileID: 559475202}
   m_Layer: 9
   m_Name: fbBrickPlain2_1 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17876,7 +17877,7 @@ GameObject:
   - component: {fileID: 595826340}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18062,7 +18063,7 @@ GameObject:
   - component: {fileID: 606929977}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18341,7 +18342,7 @@ GameObject:
   - component: {fileID: 619013990}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18713,7 +18714,7 @@ GameObject:
   - component: {fileID: 635629934}
   m_Layer: 9
   m_Name: fbBrickPlain3_1 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19123,7 +19124,7 @@ GameObject:
   - component: {fileID: 646177373}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19309,7 +19310,7 @@ GameObject:
   - component: {fileID: 652932983}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19722,7 +19723,7 @@ GameObject:
   - component: {fileID: 670590328}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20042,7 +20043,7 @@ GameObject:
   - component: {fileID: 679897045}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20135,7 +20136,7 @@ GameObject:
   - component: {fileID: 680826630}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20228,7 +20229,7 @@ GameObject:
   - component: {fileID: 682228613}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20318,7 +20319,7 @@ GameObject:
   - component: {fileID: 688303491}
   m_Layer: 9
   m_Name: fbFloor3X3_Torch (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20357,7 +20358,7 @@ GameObject:
   - component: {fileID: 688481281}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20540,7 +20541,7 @@ GameObject:
   - component: {fileID: 693284834}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20579,7 +20580,7 @@ GameObject:
   - component: {fileID: 693302095}
   m_Layer: 9
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25534,7 +25535,7 @@ GameObject:
   - component: {fileID: 711038307}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31293,7 +31294,7 @@ GameObject:
   - component: {fileID: 726423316}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31312,7 +31313,7 @@ GameObject:
   - component: {fileID: 726376626}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31331,7 +31332,7 @@ GameObject:
   - component: {fileID: 726459890}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31365,7 +31366,7 @@ GameObject:
   - component: {fileID: 724126518}
   m_Layer: 9
   m_Name: fbFloor3X3_Torch
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31384,7 +31385,7 @@ GameObject:
   - component: {fileID: 726418388}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31403,7 +31404,7 @@ GameObject:
   - component: {fileID: 726418666}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31422,7 +31423,7 @@ GameObject:
   - component: {fileID: 726422706}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31441,7 +31442,7 @@ GameObject:
   - component: {fileID: 726374066}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31459,7 +31460,7 @@ GameObject:
   - component: {fileID: 722251666}
   m_Layer: 9
   m_Name: fbBrickWallTorch
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31478,7 +31479,7 @@ GameObject:
   - component: {fileID: 725253603}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32048,7 +32049,7 @@ GameObject:
   - component: {fileID: 756258979}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32324,7 +32325,7 @@ GameObject:
   - component: {fileID: 768580362}
   m_Layer: 9
   m_Name: WallDown
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32613,7 +32614,7 @@ GameObject:
   - component: {fileID: 773945956}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32703,7 +32704,7 @@ GameObject:
   - component: {fileID: 774049153}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33108,7 +33109,7 @@ GameObject:
   - component: {fileID: 789891165}
   m_Layer: 9
   m_Name: fbBrickPlain3_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33198,7 +33199,7 @@ GameObject:
   - component: {fileID: 790399033}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33336,7 +33337,7 @@ GameObject:
   - component: {fileID: 792248682}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33612,7 +33613,7 @@ GameObject:
   - component: {fileID: 800024368}
   m_Layer: 9
   m_Name: fbFloor3X3Alt
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33654,7 +33655,7 @@ GameObject:
   - component: {fileID: 816251411}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33837,7 +33838,7 @@ GameObject:
   - component: {fileID: 818491713}
   m_Layer: 9
   m_Name: fbFloor3X3_Torch (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33968,7 +33969,7 @@ GameObject:
   - component: {fileID: 821598951}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34103,7 +34104,7 @@ GameObject:
   - component: {fileID: 823820623}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34382,7 +34383,7 @@ GameObject:
   - component: {fileID: 836668760}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34661,7 +34662,7 @@ GameObject:
   - component: {fileID: 841402992}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34787,7 +34788,7 @@ GameObject:
   - component: {fileID: 848543486}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35205,7 +35206,7 @@ GameObject:
   - component: {fileID: 874549341}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35298,7 +35299,7 @@ GameObject:
   - component: {fileID: 877306403}
   m_Layer: 9
   m_Name: fbBrickPlain3_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35391,7 +35392,7 @@ GameObject:
   - component: {fileID: 877729728}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35856,7 +35857,7 @@ GameObject:
   - component: {fileID: 907508225}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35946,7 +35947,7 @@ GameObject:
   - component: {fileID: 909030413}
   m_Layer: 9
   m_Name: fbFloor3X3Alt
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36267,7 +36268,7 @@ GameObject:
   - component: {fileID: 919713133}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36486,7 +36487,7 @@ GameObject:
   - component: {fileID: 924578863}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36858,7 +36859,7 @@ GameObject:
   - component: {fileID: 935460820}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37602,7 +37603,7 @@ GameObject:
   - component: {fileID: 954202165}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38765,7 +38766,7 @@ GameObject:
   - component: {fileID: 1005921519}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39085,7 +39086,7 @@ GameObject:
   - component: {fileID: 1011098298}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39457,7 +39458,7 @@ GameObject:
   - component: {fileID: 1018163366}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39643,7 +39644,7 @@ GameObject:
   - component: {fileID: 1021022234}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39736,7 +39737,7 @@ GameObject:
   - component: {fileID: 1022625487}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39922,7 +39923,7 @@ GameObject:
   - component: {fileID: 1034175152}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40012,7 +40013,7 @@ GameObject:
   - component: {fileID: 1038204923}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40054,7 +40055,7 @@ GameObject:
   - component: {fileID: 1038956722}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40333,7 +40334,7 @@ GameObject:
   - component: {fileID: 1048224835}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40798,7 +40799,7 @@ GameObject:
   - component: {fileID: 1059702155}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41263,7 +41264,7 @@ GameObject:
   - component: {fileID: 1090604147}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41356,7 +41357,7 @@ GameObject:
   - component: {fileID: 1090678965}
   m_Layer: 9
   m_Name: fbBrickPlain1_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41710,7 +41711,7 @@ GameObject:
   - component: {fileID: 1112360844}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41803,7 +41804,7 @@ GameObject:
   - component: {fileID: 1113571053}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42082,7 +42083,7 @@ GameObject:
   - component: {fileID: 1135824418}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42306,7 +42307,7 @@ GameObject:
   - component: {fileID: 1162375421}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42348,7 +42349,7 @@ GameObject:
   - component: {fileID: 1162554064}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42534,7 +42535,7 @@ GameObject:
   - component: {fileID: 1164666712}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42668,7 +42669,7 @@ GameObject:
   - component: {fileID: 1168498622}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43199,7 +43200,7 @@ GameObject:
   - component: {fileID: 1179614579}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43333,7 +43334,7 @@ GameObject:
   - component: {fileID: 1183050995}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43426,7 +43427,7 @@ GameObject:
   - component: {fileID: 1184367675}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43612,7 +43613,7 @@ GameObject:
   - component: {fileID: 1189589567}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43705,7 +43706,7 @@ GameObject:
   - component: {fileID: 1194870620}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44077,7 +44078,7 @@ GameObject:
   - component: {fileID: 1207409432}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44336,7 +44337,7 @@ GameObject:
   - component: {fileID: 1224389442}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44429,7 +44430,7 @@ GameObject:
   - component: {fileID: 1224628822}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44522,7 +44523,7 @@ GameObject:
   - component: {fileID: 1225127828}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45641,7 +45642,7 @@ GameObject:
   - component: {fileID: 1284299842}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45827,7 +45828,7 @@ GameObject:
   - component: {fileID: 1293823513}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -47026,7 +47027,7 @@ GameObject:
   - component: {fileID: 1343871144}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -47119,7 +47120,7 @@ GameObject:
   - component: {fileID: 1350361746}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -47212,7 +47213,7 @@ GameObject:
   - component: {fileID: 1351192551}
   m_Layer: 9
   m_Name: fbBrickPlain2_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48089,7 +48090,7 @@ GameObject:
   - component: {fileID: 1384842289}
   m_Layer: 9
   m_Name: RightWall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48223,7 +48224,7 @@ GameObject:
   - component: {fileID: 1386976560}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48316,7 +48317,7 @@ GameObject:
   - component: {fileID: 1389280855}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48409,7 +48410,7 @@ GameObject:
   - component: {fileID: 1392365339}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48502,7 +48503,7 @@ GameObject:
   - component: {fileID: 1401360314}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48595,7 +48596,7 @@ GameObject:
   - component: {fileID: 1401586489}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49153,7 +49154,7 @@ GameObject:
   - component: {fileID: 1423573807}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49246,7 +49247,7 @@ GameObject:
   - component: {fileID: 1429507654}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49590,60 +49591,36 @@ LightProbeGroup:
   m_GameObject: {fileID: 1449721442}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 3.0636897, y: 1, z: 7.6548805}
+  - {x: 3.0636897, y: 1, z: 8.7720785}
   - {x: 3.0636897, y: 1, z: -7.149699}
-  - {x: 3.0636897, y: -1, z: 7.6548805}
+  - {x: 3.0636897, y: -1, z: 8.7720785}
   - {x: 3.0636897, y: -1, z: -7.149699}
-  - {x: -3.1721427, y: 1, z: 7.6548805}
+  - {x: -3.1721427, y: 1, z: 8.7720785}
   - {x: -3.1721427, y: 1, z: -7.149699}
-  - {x: -3.1721427, y: -1, z: 7.6548805}
+  - {x: -3.1721427, y: -1, z: 8.7720785}
   - {x: -3.1721427, y: -1, z: -7.149699}
-  - {x: 3.0636897, y: 1, z: 1}
-  - {x: 3.0636897, y: -1, z: 1}
-  - {x: -3.1721427, y: 1, z: 1}
-  - {x: -3.1721427, y: -1, z: 1}
-  - {x: 3.0636897, y: 1, z: 3.1696308}
-  - {x: 3.0636897, y: -1, z: 3.1696308}
-  - {x: -3.1721427, y: 1, z: 3.1696308}
-  - {x: -3.1721427, y: -1, z: 3.1696308}
-  - {x: 3.0636897, y: 1, z: 5.2088017}
-  - {x: -3.1721427, y: 1, z: 5.2088017}
-  - {x: -3.1721427, y: -1, z: 5.2088017}
-  - {x: 3.0636897, y: -1, z: 5.2088017}
+  - {x: 3.0636897, y: 1, z: 4.7642827}
+  - {x: 3.0636897, y: -1, z: 4.7642827}
+  - {x: -3.1721427, y: 1, z: 4.7642827}
+  - {x: -3.1721427, y: -1, z: 4.7642827}
   - {x: 3.0636897, y: -1, z: -1}
   - {x: 3.0636897, y: 1, z: -1}
   - {x: -3.1721427, y: -1, z: -1}
   - {x: -3.1721427, y: 1, z: -1}
-  - {x: 3.0636897, y: -1, z: -3.3502665}
-  - {x: 3.0636897, y: 1, z: -3.3502665}
-  - {x: -3.1721427, y: -1, z: -3.3502665}
-  - {x: -3.1721427, y: 1, z: -3.3502665}
-  - {x: 1, y: 1, z: 7.6548805}
-  - {x: 1, y: -1, z: 7.6548805}
-  - {x: 1, y: -1, z: 5.2088017}
-  - {x: 1, y: 1, z: 5.2088017}
-  - {x: 1, y: 1, z: 3.1696308}
-  - {x: 1, y: -1, z: 3.1696308}
-  - {x: 1, y: 1, z: 1}
-  - {x: 1, y: -1, z: 1}
+  - {x: 1, y: 1, z: 8.7720785}
+  - {x: 1, y: -1, z: 8.7720785}
+  - {x: 1, y: 1, z: 4.7642827}
+  - {x: 1, y: -1, z: 4.7642827}
   - {x: 1, y: 1, z: -1}
   - {x: 1, y: -1, z: -1}
-  - {x: 1, y: 1, z: -3.3502665}
-  - {x: 1, y: -1, z: -3.3502665}
   - {x: 1, y: 1, z: -7.149699}
   - {x: 1, y: -1, z: -7.149699}
-  - {x: -1, y: 1, z: 7.6548805}
-  - {x: -1, y: -1, z: 7.6548805}
-  - {x: -1, y: 1, z: 5.2088017}
-  - {x: -1, y: -1, z: 5.2088017}
-  - {x: -1, y: 1, z: 3.1696308}
-  - {x: -1, y: -1, z: 3.1696308}
-  - {x: -1, y: 1, z: 1}
+  - {x: -1, y: 1, z: 8.7720785}
+  - {x: -1, y: -1, z: 8.7720785}
+  - {x: -1, y: 1, z: 4.7642827}
+  - {x: -1, y: -1, z: 4.7642827}
   - {x: -1, y: 1, z: -1}
-  - {x: -1, y: -1, z: 1}
   - {x: -1, y: -1, z: -1}
-  - {x: -1, y: 1, z: -3.3502665}
-  - {x: -1, y: -1, z: -3.3502665}
   - {x: -1, y: 1, z: -7.149699}
   - {x: -1, y: -1, z: -7.149699}
   m_Dering: 1
@@ -49661,7 +49638,7 @@ GameObject:
   - component: {fileID: 1453179663}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -54676,7 +54653,7 @@ GameObject:
   - component: {fileID: 1460071161}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55048,7 +55025,7 @@ GameObject:
   - component: {fileID: 1472109069}
   m_Layer: 9
   m_Name: fbBrickPlain3_1 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55138,7 +55115,7 @@ GameObject:
   - component: {fileID: 1484875826}
   m_Layer: 9
   m_Name: Barrier
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55533,7 +55510,7 @@ GameObject:
   - component: {fileID: 1496315136}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56217,7 +56194,7 @@ GameObject:
   - component: {fileID: 1524052902}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56861,7 +56838,7 @@ PrefabInstance:
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
@@ -56908,6 +56885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MummyMon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5469137357303450691, guid: 982e961c592a9214cbc09715b535a4cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982e961c592a9214cbc09715b535a4cc, type: 3}
 --- !u!1 &1541353068
@@ -56923,7 +56905,7 @@ GameObject:
   - component: {fileID: 1541353070}
   m_Layer: 9
   m_Name: fbBrickWallTorch
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57045,7 +57027,7 @@ GameObject:
   - component: {fileID: 1557390851}
   m_Layer: 9
   m_Name: fbBrickPlain1_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57138,7 +57120,7 @@ GameObject:
   - component: {fileID: 1557657223}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57417,7 +57399,7 @@ GameObject:
   - component: {fileID: 1578385954}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57603,7 +57585,7 @@ GameObject:
   - component: {fileID: 1584990744}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57975,7 +57957,7 @@ GameObject:
   - component: {fileID: 1589469202}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58200,7 +58182,7 @@ GameObject:
   - component: {fileID: 1591792177}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58386,7 +58368,7 @@ GameObject:
   - component: {fileID: 1603559571}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58697,7 +58679,7 @@ GameObject:
   - component: {fileID: 1613987554}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59720,7 +59702,7 @@ GameObject:
   - component: {fileID: 1643337790}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60124,7 +60106,7 @@ GameObject:
   - component: {fileID: 1654551239}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60619,7 +60601,7 @@ GameObject:
   - component: {fileID: 1672282628}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60776,7 +60758,7 @@ GameObject:
   - component: {fileID: 1672681882}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61304,7 +61286,7 @@ GameObject:
   - component: {fileID: 1694430589}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61397,7 +61379,7 @@ GameObject:
   - component: {fileID: 1695051058}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61490,7 +61472,7 @@ GameObject:
   - component: {fileID: 1697325451}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61583,7 +61565,7 @@ GameObject:
   - component: {fileID: 1699412673}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66502,7 +66484,7 @@ GameObject:
   - component: {fileID: 1701582126}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66812,7 +66794,7 @@ GameObject:
   - component: {fileID: 1714391183}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66905,7 +66887,7 @@ GameObject:
   - component: {fileID: 1716395377}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67905,7 +67887,7 @@ GameObject:
   - component: {fileID: 1758825732}
   m_Layer: 9
   m_Name: fbBrickPlain2_1 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67998,7 +67980,7 @@ GameObject:
   - component: {fileID: 1763907707}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -68184,7 +68166,7 @@ GameObject:
   - component: {fileID: 1774852355}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -68370,7 +68352,7 @@ GameObject:
   - component: {fileID: 1783337841}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -69527,7 +69509,7 @@ GameObject:
   - component: {fileID: 1820514173}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -69848,7 +69830,7 @@ GameObject:
   - component: {fileID: 1835951186}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70217,7 +70199,7 @@ GameObject:
   - component: {fileID: 1845131188}
   m_Layer: 9
   m_Name: fbFloor3X3Alt (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70259,7 +70241,7 @@ GameObject:
   - component: {fileID: 1847691167}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70352,7 +70334,7 @@ GameObject:
   - component: {fileID: 1855223951}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70445,7 +70427,7 @@ GameObject:
   - component: {fileID: 1855636134}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70721,7 +70703,7 @@ GameObject:
   - component: {fileID: 1857530385}
   m_Layer: 9
   m_Name: fbFloor3X3Alt
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71083,7 +71065,7 @@ GameObject:
   - component: {fileID: 1883343459}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71176,7 +71158,7 @@ GameObject:
   - component: {fileID: 1886920084}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71641,7 +71623,7 @@ GameObject:
   - component: {fileID: 1897545111}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -71920,7 +71902,7 @@ GameObject:
   - component: {fileID: 1905180312}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72013,7 +71995,7 @@ GameObject:
   - component: {fileID: 1911975405}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72385,7 +72367,7 @@ GameObject:
   - component: {fileID: 1922495043}
   m_Layer: 9
   m_Name: fbBrickPlain1_1 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72757,7 +72739,7 @@ GameObject:
   - component: {fileID: 1933567873}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72943,7 +72925,7 @@ GameObject:
   - component: {fileID: 1941667140}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73129,7 +73111,7 @@ GameObject:
   - component: {fileID: 1944606029}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73516,7 +73498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400052, guid: 08ebdddd656a3d24ba261e12541d8ba7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 400052, guid: 08ebdddd656a3d24ba261e12541d8ba7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -73873,7 +73855,7 @@ GameObject:
   - component: {fileID: 1963622299}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74007,7 +73989,7 @@ GameObject:
   - component: {fileID: 1970180034}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74100,7 +74082,7 @@ GameObject:
   - component: {fileID: 1970397701}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79487,7 +79469,7 @@ GameObject:
   - component: {fileID: 1978806482}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -79673,7 +79655,7 @@ GameObject:
   - component: {fileID: 1980429706}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80024,7 +80006,7 @@ PrefabInstance:
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
@@ -80071,6 +80053,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MummyMon
       objectReference: {fileID: 0}
+    - target: {fileID: 5469137357303450691, guid: 982e961c592a9214cbc09715b535a4cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982e961c592a9214cbc09715b535a4cc, type: 3}
 --- !u!1 &1982966666
@@ -80087,7 +80074,7 @@ GameObject:
   - component: {fileID: 1982966668}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80273,7 +80260,7 @@ GameObject:
   - component: {fileID: 1990242910}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80363,7 +80350,7 @@ GameObject:
   - component: {fileID: 1991576845}
   m_Layer: 9
   m_Name: LeftWall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80591,7 +80578,7 @@ GameObject:
   - component: {fileID: 2011445290}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -80870,7 +80857,7 @@ GameObject:
   - component: {fileID: 2018503543}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81056,7 +81043,7 @@ GameObject:
   - component: {fileID: 2024662442}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -81248,7 +81235,7 @@ PrefabInstance:
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5469137357303418979, guid: 982e961c592a9214cbc09715b535a4cc,
         type: 3}
@@ -81294,6 +81281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MummyMon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5469137357303450691, guid: 982e961c592a9214cbc09715b535a4cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 982e961c592a9214cbc09715b535a4cc, type: 3}
@@ -81724,7 +81716,7 @@ GameObject:
   - component: {fileID: 2060175723}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82282,7 +82274,7 @@ GameObject:
   - component: {fileID: 2086511039}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82837,7 +82829,7 @@ GameObject:
   - component: {fileID: 2098933064}
   m_Layer: 9
   m_Name: fbFloor3X3Alt
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -82972,7 +82964,7 @@ GameObject:
   - component: {fileID: 2117283039}
   m_Layer: 9
   m_Name: fbBrickPlain2_3 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -83399,7 +83391,7 @@ GameObject:
   - component: {fileID: 2134352130}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84352,7 +84344,7 @@ GameObject:
   - component: {fileID: 112994643000136301}
   m_Layer: 9
   m_Name: fbBrickPlain1_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84371,7 +84363,7 @@ GameObject:
   - component: {fileID: 112994643000104245}
   m_Layer: 9
   m_Name: fbBrickPlain2_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84428,7 +84420,7 @@ GameObject:
   - component: {fileID: 112994643000184163}
   m_Layer: 9
   m_Name: fbBrickPlain2_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84444,7 +84436,7 @@ GameObject:
   - component: {fileID: 112994643006602721}
   m_Layer: 9
   m_Name: fbFloor3X3Alt
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84463,7 +84455,7 @@ GameObject:
   - component: {fileID: 112994643000115623}
   m_Layer: 9
   m_Name: fbBrickPlain3_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84482,7 +84474,7 @@ GameObject:
   - component: {fileID: 112994643000222539}
   m_Layer: 9
   m_Name: fbBrickPlain1_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84501,7 +84493,7 @@ GameObject:
   - component: {fileID: 112994643000206159}
   m_Layer: 9
   m_Name: fbBrickPlain1_3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84520,7 +84512,7 @@ GameObject:
   - component: {fileID: 112994643000122595}
   m_Layer: 9
   m_Name: fbBrickPlain3_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84558,7 +84550,7 @@ GameObject:
   - component: {fileID: 112994643000207315}
   m_Layer: 9
   m_Name: fbBrickPlain2_2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84577,7 +84569,7 @@ GameObject:
   - component: {fileID: 112994643000141991}
   m_Layer: 9
   m_Name: fbBrickPlain3_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -84876,6 +84868,110 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83f9af0f58fc796478518bcb293f2b0e, type: 3}
+--- !u!1001 &4940864697676061802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1114426711537211793, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6084993d699c804296367029568d222, type: 2}
+    - target: {fileID: 1114426711537211795, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6084993d699c804296367029568d222, type: 2}
+    - target: {fileID: 1114426711537211799, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6084993d699c804296367029568d222, type: 2}
+    - target: {fileID: 1114426711542420695, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_Name
+      value: MummyMonBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542420695, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114426711542778103, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5aecc99a71cce3f4d9b4d4f85ee4f304, type: 3}
 --- !u!1001 &5250327754361338841
 PrefabInstance:
   m_ObjectHideFlags: 0
