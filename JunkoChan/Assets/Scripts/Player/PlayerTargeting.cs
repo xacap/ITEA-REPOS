@@ -76,27 +76,9 @@ namespace Player
             }
         }
 
-        
-
-        void Attack()
+        private void Attack(GameObject _go)
         {
-            if (mTime + delayAttack <= Time.time)
-            {
-                bulletPrefab = Resources.Load<GameObject>("Bullets/Potato");
-                Instantiate(bulletPrefab, AttackPoint.position, transform.rotation);
-
-                mTime = Time.time;
-            }
-
-            
-            /*if (bulletPrefab != null)
-            {
-                bulletPrefab.transform.position = AttackPoint.position;
-                bulletPrefab.transform.rotation = AttackPoint.transform.rotation;
-            }*/
-
-            //PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
-
+            Instantiate(_go, AttackPoint.position, transform.rotation);
         }
 
         void SetTarget()
@@ -164,13 +146,14 @@ namespace Player
                 var qTo = Quaternion.LookRotation(MonsterList[TargetIndex].transform.GetChild(0).transform.position - transform.position);
                 qTo = Quaternion.Slerp(transform.rotation, qTo, 10 * Time.deltaTime);
                 GetComponent<Rigidbody>().MoveRotation(qTo);
-                Attack();
+                
 
                 if (PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
                 {
                     PlayerMovement.Instance.Anim.SetBool("Idle", false);
                     PlayerMovement.Instance.Anim.SetBool("Run", false);
                     PlayerMovement.Instance.Anim.SetBool ("Attack", true );
+                    //Attack();
                 }
             }
             else if (JoystickMove.Instance.isPlayerMoving)
