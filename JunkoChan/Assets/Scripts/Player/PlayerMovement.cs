@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UI;
+using Room;
 
 namespace Player
 {
@@ -42,6 +43,15 @@ namespace Player
             {
                 _rb.velocity = new Vector3(JoystickMove.Instance.JoyVec.x, 0, JoystickMove.Instance.JoyVec.y) * moveSpeed;
                 _rb.rotation = Quaternion.LookRotation(new Vector3(JoystickMove.Instance.JoyVec.x, 0, JoystickMove.Instance.JoyVec.y));
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("NextRoom"))
+            {
+                Debug.Log(" Get Next Room ");
+                StageMgr.Instance.NextStage();
             }
         }
     }
