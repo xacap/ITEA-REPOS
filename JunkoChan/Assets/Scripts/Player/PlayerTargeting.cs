@@ -34,14 +34,20 @@ namespace Player
         int prevTargetIndex = 0;
         public LayerMask layerMask;
 
-        public float atkSpd = 1f;
-
-        public List<GameObject> MonsterList = new List<GameObject>(); //Monster List 
-
-        public GameObject PlayerBullet;  //Снаряд
+        private float mTime;
+        public float delayAttack = 0.5f;
+        private GameObject bulletPrefab;
         public Transform AttackPoint;
 
-        
+        public float atkSpd = 1f;
+
+        public List<GameObject> MonsterList = new List<GameObject>();
+
+        void FixedUpdate()
+        {
+            SetTarget();
+            AtkTarget();
+        }
 
         void OnDrawGizmos()
         {
@@ -49,10 +55,13 @@ namespace Player
             {
                 for (int i = 0; i < MonsterList.Count; i++)
                 {
-                    if (MonsterList[i] == null) { return; }// Добавлять
-                    RaycastHit hit; //	
-                    bool isHit = Physics.Raycast(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position,//менять 
-                                                out hit, 20f, layerMask);
+                    if (MonsterList[i] == null) 
+                    { 
+                        return; 
+                    }
+
+                    RaycastHit hit;	
+                    bool isHit = Physics.Raycast(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position, out hit, 20f, layerMask);
 
                     if (isHit && hit.transform.CompareTag("Monster"))
                     {
@@ -62,21 +71,32 @@ namespace Player
                     {
                         Gizmos.color = Color.red;
                     }
-                    Gizmos.DrawRay(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position);//менять 
+                    Gizmos.DrawRay(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position); 
                 }
             }
         }
 
-        void Update()
-        {
-            SetTarget();
-            AtkTarget();
-        }
+        
 
         void Attack()
         {
+            if (mTime + delayAttack <= Time.time)
+            {
+                bulletPrefab = Resources.Load<GameObject>("Bullets/Potato");
+                Instantiate(bulletPrefab, AttackPoint.position, transform.rotation);
+
+                mTime = Time.time;
+            }
+
+            
+            /*if (bulletPrefab != null)
+            {
+                bulletPrefab.transform.position = AttackPoint.position;
+                bulletPrefab.transform.rotation = AttackPoint.transform.rotation;
+            }*/
+
             //PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
-            Instantiate(PlayerBullet, AttackPoint.position, transform.rotation);
+
         }
 
         void SetTarget()
@@ -90,9 +110,13 @@ namespace Player
 
                 for (int i = 0; i < MonsterList.Count; i++)
                 {
-                    if (MonsterList[i] == null) { return; }   
-                    currentDist = Vector3.Distance(transform.position, MonsterList[i].transform.GetChild(0).position);//менять 
+                    if (MonsterList[i] == null) 
+                    { 
+                        return; 
+                    }   
 
+                    currentDist = Vector3.Distance(transform.position, MonsterList[i].transform.GetChild(0).position);
+                    
                     RaycastHit hit;
                     bool isHit = Physics.Raycast(transform.position, MonsterList[i].transform.GetChild(0).position - transform.position, out hit, 20f, layerMask);
 
@@ -102,10 +126,9 @@ namespace Player
                         if (TargetDist >= currentDist)
                         {
                             TargetIndex = i;
-
                             TargetDist = currentDist;
 
-                            if (!JoystickMove.Instance.isPlayerMoving && prevTargetIndex != TargetIndex)  // Добавлять// Добавлять
+                            if (!JoystickMove.Instance.isPlayerMoving && prevTargetIndex != TargetIndex)
                             {
                                 TargetIndex = prevTargetIndex;
                             }
@@ -127,7 +150,6 @@ namespace Player
                 TargetDist = 100f;
                 getATarget = true;
             }
-
         }
 
         void AtkTarget()
@@ -139,17 +161,17 @@ namespace Player
             }
             if (getATarget && !JoystickMove.Instance.isPlayerMoving && MonsterList.Count != 0)
             {
-                //Debug.Log ( "lookat : " + MonsterList[TargetIndex].transform.GetChild ( 0 ) ); 
-                //transform.LookAt(MonsterList[TargetIndex].transform.GetChild(0)); 
+                var qTo = Quaternion.LookRotation(MonsterList[TargetIndex].transform.GetChild(0).transform.position - transform.position);
+                qTo = Quaternion.Slerp(transform.rotation, qTo, 10 * Time.deltaTime);
+                GetComponent<Rigidbody>().MoveRotation(qTo);
+                Attack();
 
                 if (PlayerMovement.Instance.Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
                 {
                     PlayerMovement.Instance.Anim.SetBool("Idle", false);
                     PlayerMovement.Instance.Anim.SetBool("Run", false);
-                    PlayerMovement.Instance.Anim.SetBool ( "Attack", true );
+                    PlayerMovement.Instance.Anim.SetBool ("Attack", true );
                 }
-                Attack();
-
             }
             else if (JoystickMove.Instance.isPlayerMoving)
             {

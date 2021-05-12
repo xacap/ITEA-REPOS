@@ -2,7 +2,7 @@
 {
     Properties
     {
-         _MainTex("Base layer (RGB)", 2D) = "white" {}
+        _MainTex("Base layer (RGB)", 2D) = "white" {}
         _ScrollX("Base layer Scroll speed X", Float) = 1.0
         _ScrollY("Base layer Scroll speed Y", Float) = 0.0
         _Intensity("Intensity", Float) = 0.5
