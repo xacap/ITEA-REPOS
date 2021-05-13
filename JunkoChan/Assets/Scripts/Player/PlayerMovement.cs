@@ -46,9 +46,9 @@ namespace Player
             }
         }
 
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("NextRoom"))
+            if (other.CompareTag("NextRoom"))
             {
                 Debug.Log(" Get Next Room ");
                 StageMgr.Instance.NextStage();

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class CameraBehavior : MonoBehaviour
 {
-    public static CameraBehavior Instance    
+    public static CameraBehavior Instance
     {
         get
         {
-            if (Instance == null )
+            if (instance == null )
             {
                 instance = FindObjectOfType<CameraBehavior>();
                 if (instance == null )
@@ -24,10 +24,10 @@ public class CameraBehavior : MonoBehaviour
     private static CameraBehavior instance;
 
     public GameObject Player;
-    public Image FadeInOutImg;
+    //public Image FadeInOutImg;
 
     public float offsetY = 45f;
-    public float offsetZ = -40f;
+    public float offsetZ = -30f;
 
     Vector3 cameraPosition;
 
@@ -42,10 +42,11 @@ public class CameraBehavior : MonoBehaviour
     public void CarmeraNextRoom()
     {
         //Fade in/out
-        StartCoroutine(FadeInOut());
+        //StartCoroutine(FadeInOut());
         cameraPosition.x = Player.transform.position.x;
     }
 
+    /*
     IEnumerator FadeInOut()
     {
         float a = 1;
@@ -59,4 +60,5 @@ public class CameraBehavior : MonoBehaviour
             yield return null;
         }
     }
+    */
 }

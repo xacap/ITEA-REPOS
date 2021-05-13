@@ -26,8 +26,8 @@ namespace Room
 
         public GameObject Player;
 
-        public GameObject CloseDoor;
-        public GameObject OpenDoor;
+        //public GameObject CloseDoor;
+        //public GameObject OpenDoor;
 
         [System.Serializable]
         public class StartPositionArray
@@ -38,7 +38,7 @@ namespace Room
         public StartPositionArray[] startPositionArrays;    // 0 1 2
                                                             //startPositionArrays[0] 1~5 Stage
                                                             //startPositionArrays[1] 6~10 Stage
-                                                            //Делаем 10 комнат и входим в начальную локацию каждой комнаты.
+                                                            //Делаем 20 комнат и входим в начальную локацию каждой комнаты.
 
         public List<Transform> StartPositionAngel = new List<Transform>(); // 3 комнаты ангела
         // 3 комнаты ангела 
@@ -48,7 +48,7 @@ namespace Room
 
 
         public int currentStage = 0;  //Текущеий Stage
-        int LastStage = 10; // Последний Stage
+        int LastStage = 20; // Последний Stage
 
         // Start is called before the first frame update
         void Awake()
@@ -59,8 +59,11 @@ namespace Room
         public void NextStage()
         {
             currentStage++;
+
             if (currentStage > LastStage)
-            { return; }
+            {
+                return;
+            }
 
             if (currentStage % 5 != 0)  //Normal Stage
             {
