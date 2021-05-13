@@ -28,6 +28,8 @@ namespace Room
             {
                 playerInThisRoom = true;
                 PlayerTargeting.Instance.MonsterList = new List<GameObject>(MonsterListInRoom);
+                Debug.Log("Открыта новая комната! Колличество врагов : " + PlayerTargeting.Instance.MonsterList.Count);
+
             }
             if (other.CompareTag("Monster"))
             {
@@ -41,6 +43,7 @@ namespace Room
             {
                 playerInThisRoom = false;
                 PlayerTargeting.Instance.MonsterList.Clear();
+                Debug.Log("Игрок вышел!");
             }
             if (other.CompareTag("Monster"))
             {
