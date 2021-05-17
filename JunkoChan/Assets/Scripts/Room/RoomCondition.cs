@@ -33,7 +33,9 @@ namespace Room
             }
             if (other.CompareTag("Monster"))
             {
-                MonsterListInRoom.Add(other.transform.root.gameObject); 
+                MonsterListInRoom.Add(other.gameObject);
+                //MonsterListInRoom.Add(other.transform.root.gameObject);
+
             }
         }
 

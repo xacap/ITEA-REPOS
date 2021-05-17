@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - NextRoom
   - Potato
+  - MeleeAtk
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ground
   - Room
   - Bullet
-  - 
+  - Player
   - 
   - 
   - 
