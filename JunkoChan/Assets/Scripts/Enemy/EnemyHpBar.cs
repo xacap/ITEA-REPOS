@@ -34,7 +34,7 @@ namespace Enemy
 
         public void Dmg()
         {
-            currentHp -= 300f;
+            currentHp -= 250f;
             Invoke("BackHpFun", 0.5f);
         }
 

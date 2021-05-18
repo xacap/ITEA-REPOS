@@ -52,7 +52,7 @@ namespace Enemy
         protected virtual IEnumerator Idle()
         {
             yield return null;
-            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
                 Anim.SetTrigger("Idle");
             }
@@ -80,7 +80,6 @@ namespace Enemy
         protected virtual IEnumerator Attack()
         {
             yield return null;
-            //Atk
 
             nvAgent.stoppingDistance = 0f;
             nvAgent.isStopped = true;
@@ -91,11 +90,11 @@ namespace Enemy
             nvAgent.speed = 30f;
             canAtk = false;
 
-            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Stun"))
+            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("stun"))
             {
                 Anim.SetTrigger("Attack");
             }
-            AtkEffect();
+            //AtkEffect();
             yield return Delay500;
 
             nvAgent.speed = moveSpeed;
@@ -106,19 +105,21 @@ namespace Enemy
         protected virtual IEnumerator Move()
         {
             yield return null;
-            //Move
-            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+
+            if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("walk"))
             {
                 Anim.SetTrigger("Walk");
             }
-            if (CanAtkStateFun() && canAtk)
+
+            if(CanAtkStateFun() && canAtk)
             {
                 currentState = State.Attack;
             }
             else if (distance > playerRealizeRange)
             {
-                nvAgent.SetDestination(transform.parent.position - Vector3.forward * 5f);
+                nvAgent.SetDestination(transform.position - Vector3.forward * 5f);
             }
+
             else
             {
                 nvAgent.SetDestination(Player.transform.position);

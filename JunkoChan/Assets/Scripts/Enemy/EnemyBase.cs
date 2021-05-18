@@ -22,7 +22,7 @@ namespace Enemy
         protected float moveSpeed = 2f;
 
         protected GameObject Player;
-        public NavMeshAgent nvAgent;
+        protected NavMeshAgent nvAgent;
         protected float distance;
 
         protected GameObject parentRoom;
@@ -35,16 +35,15 @@ namespace Enemy
         protected void Start()
         {
             Player = GameObject.FindGameObjectWithTag("Player");
-            Debug.Log("Player : " + Player);
-            Debug.Log("Player.transform.position : " + Player.transform.position);
 
-            //nvAgent = GetComponent<NavMeshAgent>();
+            nvAgent = GetComponent<NavMeshAgent>();
             _rb = GetComponent<Rigidbody>();
             Anim = GetComponent<Animator>();
 
             StartCoroutine(CalcCoolTime());
         }
 
+       
         protected bool CanAtkStateFun()
         {
             Vector3 targetDir = new Vector3(Player.transform.position.x - transform.position.x, 0f, Player.transform.position.z - transform.position.z);
@@ -54,7 +53,6 @@ namespace Enemy
 
             if (hit.transform == null)
             {
-                Debug.Log(" hit.transform == null");
                 return false;
             }
 

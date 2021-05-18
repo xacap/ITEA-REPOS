@@ -78,8 +78,8 @@ namespace Player
 
         private void Attack(GameObject _go)
         {
-            PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
-            Instantiate(_go, AttackPoint.position, transform.rotation);
+           PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
+           Instantiate(_go, AttackPoint.position, transform.rotation);
         }
 
         void SetTarget()

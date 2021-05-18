@@ -18,7 +18,7 @@ namespace Player
             {
                 //Debug.Log(" Name : " + other.transform.name);
                 GetComponent<Rigidbody>().velocity = Vector3.zero;
-                Destroy(gameObject, 0.2f);
+                Destroy(gameObject, 0.1f);
             }
         }
 
@@ -29,7 +29,7 @@ namespace Player
             {
                 //Debug.Log(" Name : " + collision.transform.name);
                 GetComponent<Rigidbody>().velocity = Vector3.zero;
-                Destroy(gameObject, 0.2f);
+                Destroy(gameObject, 0.1f);
             }
         }
     }

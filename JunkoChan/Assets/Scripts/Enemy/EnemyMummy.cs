@@ -13,9 +13,13 @@ namespace Enemy
         public GameObject meleeAtkArea;
         public GameObject player;
 
-        //public NavMeshAgent nvAgent;
-
-
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, playerRealizeRange);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, attackRange);
+        }
         new protected void Start()
         {
             base.Start();
@@ -30,11 +34,6 @@ namespace Enemy
 
         void Update()
         {
-            //nvAgent.SetDestination(Player.transform.position);
-            Debug.Log("- 2 - player.transform.position : " + Player.transform.position);
-
-
-
             if (currentHp <= 0)
             {
                 nvAgent.isStopped = true;
@@ -47,20 +46,13 @@ namespace Enemy
             }
         }
 
-        private void OnDrawGizmosSelected()
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, playerRealizeRange);
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, attackRange);
-        }
-
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.transform.CompareTag("Potato"))
             {
                 enemyCanvasGo.GetComponent<EnemyHpBar>().Dmg();
                 currentHp -= 250f;
+                Debug.Log(" _ - currentHp " + currentHp);
                 //Instantiate(EffectSet.Instance.DuckDmgEffect, collision.contacts[0].point, Quaternion.Euler(90, 0, 0));
             }
         }
