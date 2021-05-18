@@ -26,7 +26,6 @@ namespace Enemy
         {
             base.Start();
             parentRoom = transform.parent.transform.parent.gameObject;
-            Debug.Log("Start - State :" + currentState.ToString());
 
             StartCoroutine(FSM());
         }

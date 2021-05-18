@@ -52,7 +52,6 @@ namespace Enemy
             {
                 enemyCanvasGo.GetComponent<EnemyHpBar>().Dmg();
                 currentHp -= 250f;
-                Debug.Log(" _ - currentHp " + currentHp);
                 //Instantiate(EffectSet.Instance.DuckDmgEffect, collision.contacts[0].point, Quaternion.Euler(90, 0, 0));
             }
         }
