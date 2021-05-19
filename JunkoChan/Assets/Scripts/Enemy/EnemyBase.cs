@@ -30,7 +30,7 @@ namespace Enemy
         protected Animator Anim;
         protected Rigidbody _rb;
 
-        public LayerMask layerMask;
+        public LayerMask layerMaskPlayer;
 
         protected void Start()
         {
@@ -48,7 +48,7 @@ namespace Enemy
         {
             Vector3 targetDir = new Vector3(Player.transform.position.x - transform.position.x, 0f, Player.transform.position.z - transform.position.z);
 
-            Physics.Raycast(new Vector3(transform.position.x, 0.5f, transform.position.z), targetDir, out RaycastHit hit, 30f, layerMask);
+            Physics.Raycast(new Vector3(transform.position.x, 0.5f, transform.position.z), targetDir, out RaycastHit hit, 30f, layerMaskPlayer);
             distance = Vector3.Distance(Player.transform.position, transform.position);
 
             if (hit.transform == null)

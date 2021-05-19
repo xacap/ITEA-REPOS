@@ -6,7 +6,7 @@ namespace Enemy
 {
     public class SheepBolt : MonoBehaviour
     {
-		[SerializeField] private float speedUp = -5f;
+		[SerializeField] private float speedUp = -7f;
 		//public int damage = 20;
 		Rigidbody _rb;
 		//[SerializeField] private GameObject explosionEffect;
@@ -18,11 +18,9 @@ namespace Enemy
 
 		void Update()
 		{
-			Vector3 forwardUp = this.transform.position + this.transform.up * speedUp * Time.fixedDeltaTime;
+			Vector3 forwardUp = transform.position + transform.up * speedUp * Time.fixedDeltaTime;
 			_rb.transform.position = forwardUp;
-			
 		}
-
 
 		private void OnCollisionEnter(Collision collision)
         {

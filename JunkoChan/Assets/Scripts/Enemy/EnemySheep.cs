@@ -11,7 +11,7 @@ namespace Enemy
         GameObject Player;
         RoomCondition RoomConditionGO;
 
-        public LayerMask layerMask2;
+        public LayerMask layerMaskWall;
 
         public GameObject DangerMarker;
         public GameObject EnemyBolt;
@@ -45,7 +45,7 @@ namespace Enemy
         void DangerMarkerShoot()
         {
             Vector3 NewPosition = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
-            Physics.Raycast(NewPosition, transform.forward, out RaycastHit hit, 30f, layerMask2);
+            Physics.Raycast(NewPosition, transform.forward, out RaycastHit hit, 30f, layerMaskWall);
 
             if (hit.transform.CompareTag("Wall"))
             {
