@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Room;
+using Player;
 
 namespace Enemy
 {
-    public class EnemySheep : MonoBehaviour
+    public class EnemySheep : EnemyMeleeFSM
     {
         GameObject Player;
         RoomCondition RoomConditionGO;
 
-        public LayerMask layerMask;
+        public LayerMask layerMask2;
 
         public GameObject DangerMarker;
         public GameObject EnemyBolt;
 
         public Transform BoltGenPosition;
 
-        // Start is called before the first frame update
-        void Start()
+        new private void Start()
         {
             Player = GameObject.FindGameObjectWithTag("Player");
             RoomConditionGO = transform.parent.transform.parent.gameObject.GetComponent<RoomCondition>();
@@ -33,7 +33,7 @@ namespace Enemy
                 yield return new WaitForSeconds(0.5f);
             }
 
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(0.5f);
             transform.LookAt(Player.transform.position);
             DangerMarkerShoot();
 
@@ -45,12 +45,12 @@ namespace Enemy
         void DangerMarkerShoot()
         {
             Vector3 NewPosition = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
-            Physics.Raycast(NewPosition, transform.forward, out RaycastHit hit, 30f, layerMask);
+            Physics.Raycast(NewPosition, transform.forward, out RaycastHit hit, 30f, layerMask2);
 
             if (hit.transform.CompareTag("Wall"))
             {
                 GameObject DangerMarkerClone = Instantiate(DangerMarker, NewPosition, transform.rotation);
-                //DangerMarkerClone.GetComponent<DangerLine>().EndPosition = hit.point;
+                DangerMarkerClone.GetComponent<DangerLine>().EndPosition = hit.point;
             }
         }
 
