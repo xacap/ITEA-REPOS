@@ -36,8 +36,10 @@ namespace Player
 
         private float mTime;
         public float delayAttack = 0.5f;
-        public GameObject BulletPrefab;
+        private GameObject bulletPrefab;
         public Transform AttackPoint;
+
+        public GameObject PlayerBolt;
 
         public float atkSpd = 1f;
 
@@ -76,17 +78,42 @@ namespace Player
             }
         }
 
-        private void Attack(GameObject _go)
+        private void Attack()
         {
-           PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
-           Instantiate(_go, AttackPoint.position, transform.rotation);
+            PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
+            Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[2]], AttackPoint.position, transform.rotation);
 
-            //if (PlayerData.Instance.PlayerSkill[1] > 0)
-               // Invoke("MultiShot", 0.2f);
+            if (PlayerData.Instance.PlayerSkill[1] > 0)
+            {
+                Invoke("MultiShot", 0.2f);
+            }
+
+            if (PlayerData.Instance.PlayerSkill[3] > 0)
+            {
+                GameObject PotatoL =
+                Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[3] - 1], AttackPoint.position, transform.rotation);
+                PotatoL.transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, -45f, 0));
+
+                GameObject PotatoR =
+                Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[3] - 1], AttackPoint.position, transform.rotation);
+                PotatoR.transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 45f, 0));
+            }
         }
+
         void MultiShot()
         {
-            Instantiate(BulletPrefab, AttackPoint.position, transform.rotation);
+            Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[2]], AttackPoint.position, transform.rotation);
+
+            if (PlayerData.Instance.PlayerSkill[3] > 0)
+            {
+                GameObject PotatoL =
+                Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[3] - 1], AttackPoint.position, transform.rotation);
+                PotatoL.transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, -45f, 0));
+
+                GameObject PotatoR =
+                Instantiate(PlayerData.Instance.PlayerBolt[PlayerData.Instance.PlayerSkill[3] - 1], AttackPoint.position, transform.rotation);
+                PotatoR.transform.rotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 45f, 0));
+            }
         }
 
         void SetTarget()

@@ -24,7 +24,7 @@ namespace Player
         }
         private static PlayerData instance;
 
-        public float dmg = 500;
+        public float dmg = 250;
         public GameObject Player;
         public GameObject[] PlayerBolt;
         public GameObject ItemExp;

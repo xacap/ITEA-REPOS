@@ -6,29 +6,101 @@ namespace Player
 {
     public class PlayerWeapon : MonoBehaviour
     {
-        void Start()
+        private Rigidbody _rb;
+        private Vector3 NewDir;
+        public int bounceCnt = 2;
+        public int wallBounceCnt = 2;
+
+        private void Awake()
         {
-            GetComponent<Rigidbody>().velocity = transform.forward * 20f;
+            _rb = GetComponent<Rigidbody>();
         }
 
+        void Start()
+        {
+            _rb.velocity = transform.forward * 20f;
+        }
+
+        Vector3 ResultDir (int index)
+        {
+            int closetIndex = -1;
+            float closetDis = 500f;
+            float currentDis = 0;
+
+            for (int i = 0; i < PlayerTargeting.Instance.MonsterList.Count; i++)
+            {
+                if (i == index) continue;
+                currentDis = Vector3.Distance(PlayerTargeting.Instance.MonsterList[i].transform.position, transform.position);
+
+                if (currentDis > 5) continue;
+
+                if (closetDis > currentDis)
+                {
+                    closetDis = currentDis;
+                    closetIndex = i;
+                }
+            }
+
+            if (closetIndex == -1)
+            {
+                Debug.Log("Что-то не так!");
+                Destroy(gameObject, 0.2f);
+                return Vector3.zero;
+            }
+            return (PlayerTargeting.Instance.MonsterList[closetIndex].transform.position - transform.position).normalized;
+        }
         private void OnTriggerEnter(Collider other)
         {
-            //Debug.Log(" Name : " + other.transform.name);
-            if(other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Monster"))
+            if (other.transform.CompareTag("Monster"))
             {
-                //Debug.Log(" Name : " + other.transform.name);
-                GetComponent<Rigidbody>().velocity = Vector3.zero;
+                if (PlayerData.Instance.PlayerSkill[0] != 0 && PlayerTargeting.Instance.MonsterList.Count >= 2)
+                {
+                    int myIndex = PlayerTargeting.Instance.MonsterList.IndexOf(other.gameObject.transform.parent.gameObject);
+
+                    if(bounceCnt > 0)
+                    {
+                        bounceCnt--;
+                        PlayerData.Instance.dmg *= 0.7f;
+                        NewDir = ResultDir(myIndex) * 20f;
+                        _rb.velocity = NewDir;
+                        return;
+                    }
+                }
+                _rb.velocity = Vector3.zero;
                 Destroy(gameObject, 0.1f);
+            }
+
+
+            if (other.transform.CompareTag("Wall"))
+            {
+                if (PlayerData.Instance.PlayerSkill[4] == 0)
+                {
+                    _rb.velocity = Vector3.zero;
+                    Destroy(gameObject, 0.1f);
+                }
+                    
             }
         }
 
         private void OnCollisionEnter(Collision collision)
         {
-            //Debug.Log(" Name : " + collision.transform.name);
-            if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Monster"))
+            if (collision.gameObject.CompareTag("Wall"))
             {
-                //Debug.Log(" Name : " + collision.transform.name);
-                GetComponent<Rigidbody>().velocity = Vector3.zero;
+               
+                if (PlayerData.Instance.PlayerSkill[4] != 0)
+                {
+                    if (wallBounceCnt > 0)
+                    {
+                        wallBounceCnt--;
+                        PlayerData.Instance.dmg *= 0.5f;
+                        NewDir = Vector3.Reflect(NewDir, collision.contacts[0].normal);
+                        _rb.velocity = NewDir * 20f;
+                        return;
+                    }
+                }
+               
+
+                _rb.velocity = Vector3.zero;
                 Destroy(gameObject, 0.1f);
             }
         }
