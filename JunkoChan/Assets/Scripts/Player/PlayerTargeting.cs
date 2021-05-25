@@ -7,7 +7,7 @@ namespace Player
 {
     public class PlayerTargeting : MonoBehaviour
     {
-        public static PlayerTargeting Instance // singlton     
+        public static PlayerTargeting Instance
         {
             get
             {
@@ -36,7 +36,7 @@ namespace Player
 
         private float mTime;
         public float delayAttack = 0.5f;
-        private GameObject bulletPrefab;
+        public GameObject BulletPrefab;
         public Transform AttackPoint;
 
         public float atkSpd = 1f;
@@ -80,6 +80,13 @@ namespace Player
         {
            PlayerMovement.Instance.Anim.SetFloat("AttackSpeed", atkSpd);
            Instantiate(_go, AttackPoint.position, transform.rotation);
+
+            //if (PlayerData.Instance.PlayerSkill[1] > 0)
+               // Invoke("MultiShot", 0.2f);
+        }
+        void MultiShot()
+        {
+            Instantiate(BulletPrefab, AttackPoint.position, transform.rotation);
         }
 
         void SetTarget()

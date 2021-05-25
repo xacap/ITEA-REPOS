@@ -11,7 +11,7 @@ namespace Enemy
     {
         public GameObject enemyCanvasGo;
         public GameObject meleeAtkArea;
-        public GameObject player;
+        public GameObject Player;
 
         private void OnDrawGizmosSelected()
         {
