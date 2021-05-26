@@ -24,7 +24,7 @@ public class CameraBehavior : MonoBehaviour
     private static CameraBehavior instance;
 
     public GameObject Player;
-    //public Image FadeInOutImg;
+    public Image FadeInOutImg;
 
     public float offsetY = 45f;
     public float offsetZ = -30f;
@@ -42,11 +42,10 @@ public class CameraBehavior : MonoBehaviour
     public void CarmeraNextRoom()
     {
         //Fade in/out
-        //StartCoroutine(FadeInOut());
+        StartCoroutine(FadeInOut());
         cameraPosition.x = Player.transform.position.x;
     }
 
-    /*
     IEnumerator FadeInOut()
     {
         float a = 1;
@@ -60,5 +59,5 @@ public class CameraBehavior : MonoBehaviour
             yield return null;
         }
     }
-    */
+    
 }

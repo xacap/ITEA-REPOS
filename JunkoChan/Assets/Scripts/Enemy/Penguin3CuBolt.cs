@@ -18,13 +18,11 @@ namespace Enemy
 
         private void OnCollisionEnter(Collision collision)
         {
-            Debug.Log(" Collision Name : " + collision.transform.name);
             if (collision.transform.CompareTag("Wall"))
             {
                 bounceCnt--;
                 if (bounceCnt > 0)
                 {
-                    Debug.Log("hit wall");
                     NewDir = Vector3.Reflect(NewDir, collision.contacts[0].normal);
                     _rb.velocity = NewDir * -10f;
                 }

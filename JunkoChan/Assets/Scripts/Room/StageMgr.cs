@@ -26,8 +26,8 @@ namespace Room
 
         public GameObject Player;
 
-        //public GameObject CloseDoor;
-        //public GameObject OpenDoor;
+        public GameObject CloseDoor;
+        public GameObject OpenDoor;
 
         [System.Serializable]
         public class StartPositionArray

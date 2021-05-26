@@ -11,14 +11,24 @@ namespace Room
         public bool playerInThisRoom = false;
         public bool isClearRoom = false;
 
+        GameObject NextGate;
+
+        void Start()
+        {
+            NextGate = transform.GetChild(5).gameObject;
+        }
         void Update()
         {
             if (playerInThisRoom)
             {
-                if (MonsterListInRoom.Count <= 0 && !isClearRoom)
+                if (MonsterListInRoom.Count <= 3 && !isClearRoom)
                 {
                     isClearRoom = true;
+
+                    StageMgr.Instance.CloseDoor.transform.position = new Vector3(-30, 0, 0);
+                    StageMgr.Instance.OpenDoor.SetActive(true);
                 }
+                Debug.Log("MonsterListInRoom.Count   " + MonsterListInRoom.Count);
             }
         }
 
@@ -30,6 +40,9 @@ namespace Room
                 PlayerTargeting.Instance.MonsterList = new List<GameObject>(MonsterListInRoom);
                 Debug.Log("Открыта новая комната! Колличество врагов : " + PlayerTargeting.Instance.MonsterList.Count);
 
+                StageMgr.Instance.CloseDoor.transform.position = NextGate.transform.position + new Vector3(0, 0, 0);
+                StageMgr.Instance.OpenDoor.transform.position = NextGate.transform.position + new Vector3(0, 0, 0);
+                StageMgr.Instance.OpenDoor.SetActive(false);
             }
             if (other.CompareTag("Monster"))
             {
@@ -37,6 +50,7 @@ namespace Room
             }
         }
 
+        /*
         private void OnTriggerExit(Collider other)
         {
             if (other.CompareTag("Player"))
@@ -50,6 +64,7 @@ namespace Room
                 MonsterListInRoom.Remove(other.transform.parent.gameObject);
             }
         }
+        */
     }
 }
 

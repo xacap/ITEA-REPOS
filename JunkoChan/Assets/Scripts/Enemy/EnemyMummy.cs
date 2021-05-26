@@ -11,7 +11,7 @@ namespace Enemy
     {
         public GameObject enemyCanvasGo;
         public GameObject meleeAtkArea;
-        public GameObject Player;
+       // public GameObject Player;
 
         private void OnDrawGizmosSelected()
         {
@@ -46,6 +46,7 @@ namespace Enemy
             }
         }
 
+        /*
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.transform.CompareTag("Potato"))
@@ -53,6 +54,17 @@ namespace Enemy
                 enemyCanvasGo.GetComponent<EnemyHpBar>().Dmg();
                 currentHp -= 250f;
                 //Instantiate(EffectSet.Instance.DuckDmgEffect, collision.contacts[0].point, Quaternion.Euler(90, 0, 0));
+            }
+        }*/
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.transform.CompareTag("Potato"))
+            {
+                enemyCanvasGo.GetComponent<EnemyHpBar>().Dmg();
+                currentHp -= other.gameObject.GetComponent<PlayerWeapon>().dmg;
+                //Instantiate(EffectSet.Instance.DuckDmgEffect, other.transform.position, Quaternion.Euler(90, 0, 0));
+                Destroy(other.gameObject);
             }
         }
         IEnumerator ResetAtkArea()

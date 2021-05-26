@@ -10,6 +10,8 @@ namespace Player
         private Vector3 NewDir;
         public int bounceCnt = 2;
         public int wallBounceCnt = 2;
+        public int dmg = 250;
+
 
         private void Awake()
         {
@@ -18,6 +20,7 @@ namespace Player
 
         void Start()
         {
+            NewDir = transform.up;
             _rb.velocity = transform.forward * 20f;
         }
 
@@ -84,9 +87,8 @@ namespace Player
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Wall"))
+            if (collision.transform.CompareTag("Wall"))
             {
-               
                 if (PlayerData.Instance.PlayerSkill[4] != 0)
                 {
                     if (wallBounceCnt > 0)
@@ -98,10 +100,8 @@ namespace Player
                         return;
                     }
                 }
-               
-
                 _rb.velocity = Vector3.zero;
-                Destroy(gameObject, 0.1f);
+                Destroy(gameObject);
             }
         }
     }
