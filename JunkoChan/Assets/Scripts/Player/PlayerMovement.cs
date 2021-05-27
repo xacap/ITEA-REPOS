@@ -67,6 +67,11 @@ namespace Player
                 }
 
             }
+
+            if (PlayerTargeting.Instance.MonsterList.Count <= 0 && other.transform.CompareTag("EXP"))
+            {
+                Destroy(other.gameObject.transform.parent.gameObject);
+            }
         }
     }
 }

@@ -19,9 +19,15 @@ namespace Room
         }
         void Update()
         {
+            AddMonsterListInRoom();
+            CheckMonsterList();
+        }
+
+        void AddMonsterListInRoom()
+        {
             if (playerInThisRoom)
             {
-                if (MonsterListInRoom.Count <= 3 && !isClearRoom)
+                if (MonsterListInRoom.Count <= 0 && !isClearRoom)
                 {
                     isClearRoom = true;
 
@@ -29,6 +35,17 @@ namespace Room
                     StageMgr.Instance.OpenDoor.SetActive(true);
                 }
                 Debug.Log("MonsterListInRoom.Count   " + MonsterListInRoom.Count);
+            }
+
+        }
+        void CheckMonsterList()
+        {
+            for (int i = 0; i <= MonsterListInRoom.Count; i++)
+            {
+                if (MonsterListInRoom[i] == null)
+                {
+                    MonsterListInRoom.Remove(MonsterListInRoom[i]);
+                }
             }
         }
 

@@ -9,6 +9,7 @@ TagManager:
   - NextRoom
   - Potato
   - MeleeAtk
+  - EXP
   layers:
   - Default
   - TransparentFX
@@ -24,8 +25,8 @@ TagManager:
   - Player
   - Wall
   - OnlyWall
-  - 
-  - 
+  - EXP
+  - Enemy
   - 
   - 
   - 

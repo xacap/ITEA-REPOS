@@ -41,6 +41,16 @@ namespace Enemy
                 _rb.gameObject.SetActive(false);
                 PlayerTargeting.Instance.MonsterList.Remove(transform.parent.gameObject);
                 PlayerTargeting.Instance.TargetIndex = -1;
+
+                Vector3 CurrentPostion = new Vector3(transform.position.x, 3f, transform.position.z);
+                for (int i = 0; i < (StageMgr.Instance.currentStage / 10 + 2 + Random.Range(0, 3)); i++)
+                {
+                    Debug.Log(i);
+                    GameObject ExpClone =
+                    Instantiate(PlayerData.Instance.ItemExp, CurrentPostion, transform.rotation);
+                    ExpClone.transform.parent = gameObject.transform.parent.parent;
+                }
+
                 Destroy(transform.parent.gameObject);
                 return;
             }
