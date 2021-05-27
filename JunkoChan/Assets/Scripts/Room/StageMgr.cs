@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UI;
 
 namespace Room
 {
@@ -62,6 +63,7 @@ namespace Room
 
             if (currentStage > LastStage)
             {
+                UiController.Instance.EndGame();
                 return;
             }
 

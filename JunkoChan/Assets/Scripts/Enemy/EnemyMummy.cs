@@ -74,7 +74,22 @@ namespace Enemy
                 enemyCanvasGo.GetComponent<EnemyHpBar>().Dmg();
                 currentHp -= other.gameObject.GetComponent<PlayerWeapon>().dmg;
                 //Instantiate(EffectSet.Instance.DuckDmgEffect, other.transform.position, Quaternion.Euler(90, 0, 0));
-                Destroy(other.gameObject);
+                
+                GameObject DmgTextClone =
+                Instantiate(EffectSet.Instance.MonsterDmgTxt, transform.position, Quaternion.identity);
+
+                if (Random.value < 0.5)
+                {
+                    currentHp -= other.gameObject.GetComponent<PlayerWeapon>().dmg;
+                    DmgTextClone.GetComponent<DmgTxt>().DisplayDamage(other.gameObject.GetComponent<PlayerWeapon>().dmg, false);
+                }
+                else
+                {
+                    currentHp -= other.gameObject.GetComponent<PlayerWeapon>().dmg * 2;
+                    DmgTextClone.GetComponent<DmgTxt>().DisplayDamage(other.gameObject.GetComponent<PlayerWeapon>().dmg * 2, true);
+                }
+
+                //Destroy(other.gameObject);
             }
         }
         IEnumerator ResetAtkArea()

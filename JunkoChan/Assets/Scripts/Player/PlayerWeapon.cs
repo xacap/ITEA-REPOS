@@ -10,7 +10,7 @@ namespace Player
         private Vector3 NewDir;
         public int bounceCnt = 2;
         public int wallBounceCnt = 2;
-        public int dmg = 250;
+        public int dmg = 200;
 
 
         private void Awake()

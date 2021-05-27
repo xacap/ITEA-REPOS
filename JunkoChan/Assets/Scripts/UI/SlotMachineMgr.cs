@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UI;
 
 
 namespace UI
@@ -61,6 +62,10 @@ namespace UI
             }
         }
 
+        private void OnEnable()
+        {
+            Start();
+        }
         IEnumerator StartSlot(int SlotIndex)
         {
             for (int i = 0; i < (ItemCnt * (6 + SlotIndex * 4) + answer[SlotIndex]) * 2; i++)
@@ -80,6 +85,7 @@ namespace UI
 
         public void ClickBtn(int index)
         {
+            UiController.Instance.PlayerLvUp(false);
             DisplayResultImage.sprite = SkillSprite[ResultIndexList[index]];
         }
     }

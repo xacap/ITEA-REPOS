@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceCnt: 2
   wallBounceCnt: 2
+  dmg: 200
 --- !u!1 &175386249965954727
 GameObject:
   m_ObjectHideFlags: 0

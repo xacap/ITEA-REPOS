@@ -70,6 +70,7 @@ namespace Player
 
             if (PlayerTargeting.Instance.MonsterList.Count <= 0 && other.transform.CompareTag("EXP"))
             {
+                PlayerData.Instance.PlayerExpCalc(100);
                 Destroy(other.gameObject.transform.parent.gameObject);
             }
         }
