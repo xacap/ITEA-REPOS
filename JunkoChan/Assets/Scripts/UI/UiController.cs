@@ -37,14 +37,73 @@ namespace UI
         public Text ClearRoomCnt;
 
         public Slider PlayerExpBar;
+        public Slider BossHpBar;
+        public Slider BossBackHpSlider;
+        public bool backHpHit = false;
+        public bool bossRoom = false;
 
         public Text playerLvText;
+
+        public float BossCurrentHp;
+        public float BossMaxHp;
+
         void Start()
         {
+            PlayerExpBar.value = PlayerData.Instance.PlayerCurrentExp / PlayerData.Instance.PlayerLvUpExp;
             PlayerExpBar.gameObject.SetActive(true);
+            BossHpBar.gameObject.SetActive(false);
+            BossBackHpSlider.gameObject.SetActive(false);
         }
 
-        
+        void Update()
+        {
+            if (!bossRoom)
+            {
+                PlayerExpBar.value = Mathf.Lerp(PlayerExpBar.value, PlayerData.Instance.PlayerCurrentExp / PlayerData.Instance.PlayerLvUpExp, 0.75f);
+                playerLvText.text = "Lv." + PlayerData.Instance.PlayerLv;
+            }
+            else
+            {
+
+                BossHpBar.value = Mathf.Lerp(BossHpBar.value, BossCurrentHp / BossMaxHp, Time.deltaTime * 5f);
+
+                if (backHpHit)
+                {
+                    BossBackHpSlider.value = Mathf.Lerp(BossBackHpSlider.value, BossHpBar.value, Time.deltaTime * 10f);
+                    if (BossHpBar.value >= BossBackHpSlider.value - 0.01f)
+                    {
+                        backHpHit = false;
+                        BossBackHpSlider.value = BossHpBar.value;
+                    }
+                }
+            }
+        }
+        public void Dmg()
+        {
+            Invoke("BackHpFun", 0.5f);
+        }
+        void BackHpFun()
+        {
+            backHpHit = true;
+        }
+
+        public void CheckBossRoom(bool isBossRoom)
+        {
+            bossRoom = isBossRoom;
+
+            if (isBossRoom)
+            {
+                PlayerExpBar.gameObject.SetActive(false);
+                BossHpBar.gameObject.SetActive(true);
+                BossBackHpSlider.gameObject.SetActive(true);
+            }
+            else
+            {
+                PlayerExpBar.gameObject.SetActive(true);
+                BossHpBar.gameObject.SetActive(false);
+                BossBackHpSlider.gameObject.SetActive(false);
+            }
+        }
 
         public void PlayerLvUp(bool isSlotMachineOn)
         {

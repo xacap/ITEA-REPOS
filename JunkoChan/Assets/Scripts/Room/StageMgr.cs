@@ -93,6 +93,7 @@ namespace Room
                         Player.transform.position = StartPositionBoss[randomIndex].position;
                         StartPositionBoss.RemoveAt(currentStage / 10);
                     }
+                    UiController.Instance.CheckBossRoom(true); 
                 }
             }
             CameraBehavior.Instance.CarmeraNextRoom();

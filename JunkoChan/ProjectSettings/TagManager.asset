@@ -10,6 +10,7 @@ TagManager:
   - Potato
   - MeleeAtk
   - EXP
+  - BossMeleeAttack
   layers:
   - Default
   - TransparentFX

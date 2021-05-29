@@ -93,7 +93,8 @@ namespace Enemy
             {
                 Anim.SetTrigger("Attack");
             }
-            //AtkEffect();
+
+            AtkEffect();
             yield return Delay500;
 
             nvAgent.speed = moveSpeed;

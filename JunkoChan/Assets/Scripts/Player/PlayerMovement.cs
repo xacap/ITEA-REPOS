@@ -51,19 +51,18 @@ namespace Player
         {
             if (other.CompareTag("NextRoom"))
             {
-                Debug.Log(" Get Next Room ");
                 StageMgr.Instance.NextStage();
             }
 
             if (other.transform.CompareTag("MeleeAtk"))
             {
-                other.transform.parent.GetComponent<EnemyMummy>().meleeAtkArea.SetActive(false);
-                PlayerHpBar.Instance.currentHp -= other.transform.parent.GetComponent<EnemyMummy>().damage * 2f;
+                other.transform.parent.GetComponent<EnemyDuck>().meleeAtkArea.SetActive(false);
+                PlayerHpBar.Instance.currentHp -= other.transform.parent.GetComponent<EnemyDuck>().damage * 2f;
 
                 if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Dmg"))
                 {
                     Anim.SetTrigger("Dmg");
-                    //Instantiate(EffectSet.Instance.PlayerDmgEffect, PlayerTargeting.Instance.AttackPoint.position, Quaternion.Euler(90, 0, 0));
+                    Instantiate(EffectSet.Instance.PlayerDmgEffect, PlayerTargeting.Instance.AttackPoint.position, Quaternion.Euler(90, 0, 0));
                 }
 
             }

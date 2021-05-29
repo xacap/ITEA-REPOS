@@ -29,9 +29,9 @@ namespace Player
         public GameObject Player;
         public GameObject[] PlayerBolt;
         public GameObject ItemExp;
-        float PlayerCurrentExp = 1f;
-        float PlayerLvUpExp = 100f;
-        int PlayerLv = 1;
+        public float PlayerCurrentExp = 1f;
+        public float PlayerLvUpExp = 100f;
+        public int PlayerLv = 1;
         public bool playerDead = false;
 
         public float maxHp = 1000f;

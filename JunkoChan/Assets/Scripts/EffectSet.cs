@@ -23,11 +23,11 @@ public class EffectSet : MonoBehaviour
     private static EffectSet instance;
 
     [Header("Monster")]
-    //public GameObject DuckAtkEffect;
-    //public GameObject DuckDmgEffect;
-    public GameObject MonsterDmgTxt;
+    public GameObject DuckAtkEffect;
+    public GameObject DuckDmgEffect;
+    public GameObject MonsterDmgTxt; 
 
-    //[Header("Player")]
-    //public GameObject PlayerAtkEffect;
-    //public GameObject PlayerDmgEffect;
+    [Header("Player")]
+    public GameObject PlayerAtkEffect;
+    public GameObject PlayerDmgEffect;
 }

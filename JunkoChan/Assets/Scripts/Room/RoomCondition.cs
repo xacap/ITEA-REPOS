@@ -17,37 +17,6 @@ namespace Room
         {
             NextGate = transform.GetChild(5).gameObject;
         }
-        void Update()
-        {
-            AddMonsterListInRoom();
-            CheckMonsterList();
-        }
-
-        void AddMonsterListInRoom()
-        {
-            if (playerInThisRoom)
-            {
-                if (MonsterListInRoom.Count <= 0 && !isClearRoom)
-                {
-                    isClearRoom = true;
-
-                    StageMgr.Instance.CloseDoor.transform.position = new Vector3(-30, 0, 0);
-                    StageMgr.Instance.OpenDoor.SetActive(true);
-                }
-                Debug.Log("MonsterListInRoom.Count   " + MonsterListInRoom.Count);
-            }
-
-        }
-        void CheckMonsterList()
-        {
-            for (int i = 0; i <= MonsterListInRoom.Count; i++)
-            {
-                if (MonsterListInRoom[i] == null)
-                {
-                    MonsterListInRoom.Remove(MonsterListInRoom[i]);
-                }
-            }
-        }
 
         private void OnTriggerEnter(Collider other)
         {
@@ -63,11 +32,45 @@ namespace Room
             }
             if (other.CompareTag("Monster"))
             {
-               MonsterListInRoom.Add(other.transform.parent.gameObject);
+                MonsterListInRoom.Add(other.transform.parent.gameObject);
+            }
+        }
+        void LateUpdate()
+        {
+            if (playerInThisRoom)
+            {
+                Debug.Log("MonsterListInRoom.Count   " + MonsterListInRoom.Count);
+                CheckMonsterList();
+                if (MonsterListInRoom.Count <= 0 && !isClearRoom)
+                {
+                    isClearRoom = true;
+
+                    StageMgr.Instance.CloseDoor.transform.position = new Vector3(-30, 0, 0);
+                    StageMgr.Instance.OpenDoor.SetActive(true);
+                }
+            }
+        }
+       
+        void CheckMonsterList()
+        {
+            if (MonsterListInRoom.Count > 0 && !isClearRoom)
+            {
+                for (int i = 0; i <= MonsterListInRoom.Count; i++)
+                {
+                    if (MonsterListInRoom[i] == null)
+                    {
+                        MonsterListInRoom.Remove(MonsterListInRoom[i]);
+                    }
+                }
             }
         }
 
+       
+
         /*
+         * 
+         * 
+         * 
         private void OnTriggerExit(Collider other)
         {
             if (other.CompareTag("Player"))
@@ -81,6 +84,8 @@ namespace Room
                 MonsterListInRoom.Remove(other.transform.parent.gameObject);
             }
         }
+
+        
         */
     }
 }
