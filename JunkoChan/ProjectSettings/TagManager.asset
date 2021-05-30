@@ -11,6 +11,8 @@ TagManager:
   - MeleeAtk
   - EXP
   - BossMeleeAttack
+  - FxTemporaire
+  - RangeAtk
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - OnlyWall
   - EXP
   - Enemy
-  - 
+  - EnemyWeapon
   - 
   - 
   - 

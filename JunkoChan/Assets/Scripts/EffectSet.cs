@@ -25,7 +25,7 @@ public class EffectSet : MonoBehaviour
     [Header("Monster")]
     public GameObject DuckAtkEffect;
     public GameObject DuckDmgEffect;
-    public GameObject MonsterDmgTxt; 
+    public GameObject MonsterDmgText; 
 
     [Header("Player")]
     public GameObject PlayerAtkEffect;

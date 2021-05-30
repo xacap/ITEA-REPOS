@@ -67,10 +67,39 @@ namespace Player
 
             }
 
+            if (other.transform.CompareTag("BossMeleeAttack"))
+            {
+                PlayerHpBar.Instance.currentHp -= other.transform.parent.GetComponent<EnemyStageBoss>().damage * 2f;
+                PlayerData.Instance.currentHp -= other.transform.parent.GetComponent<EnemyStageBoss>().damage * 2f;
+
+                if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Dmg"))
+                {
+                    Anim.SetTrigger("Dmg");
+                    Instantiate(EffectSet.Instance.PlayerDmgEffect, PlayerTargeting.Instance.AttackPoint.position, Quaternion.Euler(90, 0, 0));
+                }
+            }
+
             if (PlayerTargeting.Instance.MonsterList.Count <= 0 && other.transform.CompareTag("EXP"))
             {
                 PlayerData.Instance.PlayerExpCalc(100);
                 Destroy(other.gameObject.transform.parent.gameObject);
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.transform.CompareTag("RangeAtk"))
+            {
+                Destroy(collision.gameObject, 0.1f);
+
+                PlayerHpBar.Instance.currentHp -= collision.transform.GetComponent<BossBolt>().damage;
+                PlayerData.Instance.currentHp -= collision.transform.GetComponent<BossBolt>().damage;
+
+                if (!Anim.GetCurrentAnimatorStateInfo(0).IsName("Dmg"))
+                {
+                    Anim.SetTrigger("Dmg");
+                    Instantiate(EffectSet.Instance.PlayerDmgEffect, PlayerTargeting.Instance.AttackPoint.position, Quaternion.Euler(90, 0, 0));
+                }
             }
         }
     }

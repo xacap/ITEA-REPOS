@@ -11,7 +11,6 @@ namespace Enemy
     {
         public GameObject enemyCanvasGo;
         public GameObject meleeAtkArea;
-        // public GameObject Player;
 
         private void OnDrawGizmosSelected()
         {
@@ -76,7 +75,7 @@ namespace Enemy
                 Instantiate(EffectSet.Instance.DuckDmgEffect, other.transform.position, Quaternion.Euler(90, 0, 0));
 
                 GameObject DmgTextClone =
-                Instantiate(EffectSet.Instance.MonsterDmgTxt, transform.position, Quaternion.identity);
+                Instantiate(EffectSet.Instance.MonsterDmgText, transform.position, Quaternion.identity);
 
                 if (Random.value < 0.5)
                 {
