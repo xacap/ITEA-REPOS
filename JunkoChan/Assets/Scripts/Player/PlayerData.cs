@@ -46,7 +46,7 @@ namespace Player
                 currentHp = 0;
                 playerDead = true;
                 PlayerMovement.Instance.Anim.SetTrigger("Dead");
-                //UiController.Instance.EndGame();
+                UiController.Instance.EndGame();
                 return;
             }
         }
