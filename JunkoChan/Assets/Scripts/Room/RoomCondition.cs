@@ -53,16 +53,21 @@ namespace Room
        
         void CheckMonsterList()
         {
-            if (MonsterListInRoom.Count > 0 && !isClearRoom)
+            if (MonsterListInRoom != null)
             {
-                for (int i = 0; i <= MonsterListInRoom.Count; i++)
+                if (MonsterListInRoom.Count > 0 && !isClearRoom)
                 {
-                    if (MonsterListInRoom[i] == null)
+                    for (int i = 0; i <= MonsterListInRoom.Count; i++)
                     {
-                        MonsterListInRoom.Remove(MonsterListInRoom[i]);
+                        if (MonsterListInRoom[i] == null)
+                        {
+                            MonsterListInRoom.Remove(MonsterListInRoom[i]);
+                        }
                     }
                 }
             }
+            
+            
         }
 
        

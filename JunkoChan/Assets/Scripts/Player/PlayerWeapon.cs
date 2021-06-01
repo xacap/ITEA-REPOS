@@ -11,11 +11,12 @@ namespace Player
         public int bounceCnt = 2;
         public int wallBounceCnt = 2;
         public int dmg = 200;
-
+        private List<int> PlayerSkills = new List<int>();
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
+            PlayerSkills = PlayerData.Instance.PlayerSkill;
         }
 
         void Start()
@@ -70,7 +71,14 @@ namespace Player
                     }
                 }
                 _rb.velocity = Vector3.zero;
-                Destroy(gameObject, 0.1f);
+                
+                if (PlayerSkills != null && PlayerSkills.Count != 0)
+                {
+                    if (PlayerData.Instance.PlayerSkill[0] == 0)
+                    {
+                        Destroy(gameObject, 0.1f);
+                    }
+                }
             }
 
 
